@@ -1,0 +1,10 @@
+@import '../fontface';
+@include fontFace('panton-black-italic','../font/panton-black-italic/panton-black-italic');
+@include fontFace('panton-bold-italic','../font/panton-bold-italic/panton-bold-italic');
+@include fontFace('panton-extra-black-italic','../font/panton-extra-black-italic/panton-extra-black-italic');
+@include fontFace('panton-extra-bold-italic','../font/panton-extra-bold-italic/panton-extra-bold-italic');
+@include fontFace('panton-extra-light-italic','../font/panton-extra-light-italic/panton-extra-light-italic');
+@include fontFace('panton-italic','../font/panton-italic/panton-italic');
+@include fontFace('panton-light-italic','../font/panton-light-italic/panton-light-italic');
+@include fontFace('panton-semibold-italic','../font/panton-semibold-italic/panton-semibold-italic');
+@include fontFace('panton-thin-italic','../font/panton-thin-italic/panton-thin-italic');

@@ -1,0 +1,56 @@
+$_grid_columns-width : 1140px !default;
+$_grid_margin : 15px !default;
+$_grid_gutter : 30px !default;
+$_grid_column : 65px !default;
+
+.layout-grid-bars {
+	position: fixed;
+	z-index: 2030;
+	top: 0;
+	left: 0;
+	right: 0;
+    background: rgba(255,255,255,0.15);
+	.layout-grid-bars-wrapper {
+		width: $_grid_columns-width;
+		margin: 0 auto;
+		.layout-grid-bars-margin {
+			background-color: rgb(255,60,65,0.20);
+			width: $_grid_margin;
+			height: 100vh;
+			line-height: 120px;
+			float: left;
+			overflow: hidden;
+			-webkit-transition: background-color 0.5s ease-in-out;
+			-moz-transition: background-color 0.5s ease-in-out;
+			-o-transition: background-color 0.5s ease-in-out;
+			-ms-transition: background-color 0.5s ease-in-out;
+			transition: background-color 0.5s ease-in-out;
+		}
+		.layout-grid-bars-column {
+			background-color: rgb(255,60,65,0.10);
+			width: $_grid_column;
+			height: 100vh;
+			line-height: 120px;
+			float: left;
+			overflow: hidden;
+			-webkit-transition: background-color 0.5s ease-in-out;
+			-moz-transition: background-color 0.5s ease-in-out;
+			-o-transition: background-color 0.5s ease-in-out;
+			-ms-transition: background-color 0.5s ease-in-out;
+			transition: background-color 0.5s ease-in-out;
+		}
+		.layout-grid-bars-gutter {
+			background-color: rgb(227,228,232,0.2);
+			width: $_grid_gutter;
+			height: 100vh;
+			line-height: 120px;
+			float: left;
+			overflow: hidden;
+			-webkit-transition: background-color 0.5s ease-in-out;
+			-moz-transition: background-color 0.5s ease-in-out;
+			-o-transition: background-color 0.5s ease-in-out;
+			-ms-transition: background-color 0.5s ease-in-out;
+			transition: background-color 0.5s ease-in-out;
+		}
+	}
+}
