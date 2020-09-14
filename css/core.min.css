@@ -4665,7 +4665,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 .layout-grid-bars {
   position: fixed;
-  z-index: 2030;
+  z-index: -1;
   top: 0;
   left: 0;
   right: 0;
