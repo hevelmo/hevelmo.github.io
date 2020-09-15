@@ -180,6 +180,9 @@ template {
 [hidden] {
   display: none;
 }
+.cur-hover {
+  cursor: pointer;
+}
 /* animate */
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
