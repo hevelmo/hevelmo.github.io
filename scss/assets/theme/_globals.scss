@@ -1,0 +1,11 @@
+body {
+    background: $bg_fondo_dark;
+}
+body a {
+    outline: none !important;
+}
+a {
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}

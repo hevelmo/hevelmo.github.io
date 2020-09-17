@@ -10725,4 +10725,222 @@ website:   	http://www.themepunch.com
   overflow: hidden;
   transition: background-color 0.5s ease-in-out;
 }
+
+/* Headings */
+body {
+  background: #000000;
+}
+
+body a {
+  outline: none !important;
+}
+
+a {
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+.text-color-white {
+  color: #ffffff;
+}
+
+/* Primary color */
+.text-color-plano-yellow-primary {
+  color: #f4e600;
+}
+
+/* Secondary color */
+.text-color-plano-yellow-secondary {
+  color: #f7be00;
+}
+
+/* Dark color */
+.text-color-plano-dark {
+  color: #000000;
+}
+
+/* White color */
+.text-color-plano-white {
+  color: #ffffff;
+}
+
+/* Gama Color Entry color */
+.text-color-plano-gama-entry {
+  color: #f4e600;
+}
+
+/* Gama Color Middle color */
+.text-color-plano-gama-midle {
+  color: #be5a1e;
+}
+
+/* Primary color */
+.bg-color-plano-yellow-primary {
+  background: #f4e600;
+}
+
+/* Secondary color */
+.bg-color-plano-yellow-secondary {
+  background: #f7be00;
+}
+
+/* Dark color */
+.bg-color-plano-dark {
+  background: #000000;
+}
+
+/* White color */
+.bg-color-plano-white {
+  background: #ffffff;
+}
+
+/* Gama Color Entry color */
+.bg-color-plano-gama-entry {
+  background: #f4e600;
+}
+
+/* Gama Color Middle color */
+.bg-color-plano-gama-midle {
+  background: #be5a1e;
+}
+
+/* Gama gradient entry */
+.gradient-gama-entry {
+  background: linear-gradient(135deg, #f4e600 0%, #f7be00 100%);
+}
+
+/* Gama gradient middle */
+.gradient-gama-middle {
+  background: linear-gradient(135deg, #f4e600 0%, #be5a1e 100%);
+}
+
+/* Pattern Yellow Dark */
+.pattern-yellow-dark-name {
+  background: #848484 url("../img/patterns/pattern-yellow-dark.svg");
+  background-size: 80px 80px;
+  background-position: 0px 0px;
+  background-repeat: repeat;
+}
+
+.pattern-yellow-name {
+  background: #000000 url("../img/patterns/pattern-primary-yellow.svg");
+  background-size: 80px 80px;
+  background-position: 0px 0px;
+  background-repeat: repeat;
+}
+
+.pattern-dark-name {
+  background: #848484 url("../img/patterns/pattern-dark.svg");
+  background-size: 80px 80px;
+  background-position: 0px 0px;
+  background-repeat: repeat;
+}
+
+.pattern-white-name {
+  background: #000000 url("../img/patterns/pattern-white-opc-90.svg");
+  background-size: 80px 80px;
+  background-position: 0px 0px;
+  background-repeat: repeat;
+}
+
+.gradient-pattern-middle-name {
+  background: url("../img/patterns/pattern-orange-smoke.svg"), linear-gradient(to right, rgba(190, 90, 30, 0.89) 0%, rgba(242, 229, 0, 0.89) 100%);
+}
+
+.gradient-pattern-yellow-name {
+  background: url("../img/patterns/pattern-orange-smoke.svg"), linear-gradient(to right, rgba(250, 191, 18, 0.89) 0%, rgba(242, 229, 0, 0.89) 100%);
+}
+
+h1, .h1 {
+  font-size: 41px;
+}
+
+h2, .h2 {
+  font-size: 36px;
+}
+
+h3, .h3 {
+  font-size: 31px;
+}
+
+h4, .h4 {
+  font-size: 26px;
+}
+
+h5, .h5 {
+  font-size: 21px;
+}
+
+h6, .h6 {
+  font-size: 16px;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-family: "panton-bold-italic";
+}
+
+.type-titulo-a {
+  font-size: 96px;
+}
+
+.type-titulo-b {
+  font-size: 72px;
+}
+
+.type-dato {
+  font-size: 56px;
+}
+
+.type-portada-titulo {
+  font-size: 50px;
+}
+
+.type-banner-primary-titulo {
+  font-size: 40px;
+}
+
+.type-banner-secondary-titulo {
+  font-size: 32px;
+}
+
+.type-descripcion {
+  font-size: 32px;
+}
+
+.type-titulo-estandar {
+  font-size: 20px;
+}
+
+.type-titulo-banner-mini {
+  font-size: 20px;
+}
+
+.type-descripcion-banner {
+  font-size: 20px;
+}
+
+.type-descripcion-corta {
+  font-size: 18px;
+}
+
+.type-descripcion-banner-mini {
+  font-size: 18px;
+}
+
+.type-descripcion-estandar {
+  font-size: 15px;
+}
+
+.type-footer-tags {
+  font-size: 12px;
+}
+
+.type-legal-info {
+  font-size: 12px;
+}
+
+.type-icon-description {
+  font-size: 12px;
+}
 /*# sourceMappingURL=core.css.map */

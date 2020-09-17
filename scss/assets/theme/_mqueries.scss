@@ -1,0 +1,268 @@
+$laptopwhidpiscreen_vw : 1440px;
+$laptopwhidpiscreen_vh : 900px;
+@mixin laptopwhidpiscreen {
+    @media only screen and (max-width: #{$laptopwhidpiscreen_vw}) and (max-height: #{$laptopwhidpiscreen_vh}) {
+        @content;
+    }
+}
+$laptopwtouch_vw : 1280px;
+$laptopwtouch_vh : 950px;
+@mixin laptopwtouch {
+    @media only screen and (max-width: #{$laptopwtouch_vw}) and (max-height: #{$laptopwtouch_vh}) {
+        @content;
+    }
+}
+$laptopwmdpiscreen_vw : 1280px;
+$laptopwmdpiscreen_vh : 800px;
+@mixin laptopwmdpiscreen {
+    @media only screen and (max-width: #{$laptopwmdpiscreen_vw}) and (max-height: #{$laptopwmdpiscreen_vh}) {
+        @content;
+    }
+}
+$ipadpro_vw : 1024px;
+$ipadpro_vh : 1366px;
+@mixin ipadpro {
+    @media only screen and (max-width: #{$ipadpro_vw}) and (max-height: #{$ipadpro_vh}) {
+        @content;
+    }
+}
+$customedevice_vw : 1024px;
+$customedevice_vh : 768px;
+@mixin customedevice {
+    @media only screen and (max-width: #{$customedevice_vw}) and (max-height: #{$customedevice_vh}) {
+        @content;
+    }
+}
+$kindlefirehdx_vw : 800px;
+$nexus10_vw : 800px;
+
+$kindlefirehdx_vh : 1280px;
+$nexus10_vh : 1280px;
+@mixin kindlefirehdx {
+    @media only screen and (max-width: #{$kindlefirehdx_vw}) and (max-height: #{$kindlefirehdx_vh}) {
+        @content;
+    }
+}
+@mixin nexus10 {
+    @media only screen and (max-width: #{$nexus10_vw}) and (max-height: #{$nexus10_vh}) {
+        @content;
+    }
+}
+$ipadmini_vw : 768px;
+$ipad_vw : 768px;
+
+$ipadmini_vh : 1024px;
+$ipad_vh : 1024px;
+@mixin ipadmini {
+    @media only screen and (max-width: #{$ipadmini_vw}) and (max-height: #{$ipadmini_vh}) {
+        @content;
+    }
+}
+@mixin ipad {
+    @media only screen and (max-width: #{$ipad_vw}) and (max-height: #{$ipad_vh}) {
+        @content;
+    }
+}
+$microsoftlumia550_vw : 640px;
+$microsoftlumia550_vh : 360px;
+@mixin microsoftlumia550 {
+    @media only screen and (max-width: #{$microsoftlumia550_vw}) and (max-height: #{$microsoftlumia550_vh}) {
+        @content;
+    }
+}
+$blackberryplaybook_vw : 600px;
+$blackberryplaybook_vh : 1024px;
+@mixin blackberryplaybook {
+    @media only screen and (max-width: #{$blackberryplaybook_vw}) and (max-height: #{$blackberryplaybook_vh}) {
+        @content;
+    }
+}
+$nexus7_vw : 600px;
+$nexus7_vh : 960px;
+@mixin nexus7 {
+    @media only screen and (max-width: #{$nexus7_vw}) and (max-height: #{$nexus7_vh}) {
+        @content;
+    }
+}
+$surfaceduo_vw : 540px;
+$surfaceduo_vh : 720px;
+@mixin surfaceduo {
+    @media only screen and (max-width: #{$surfaceduo_vw}) and (max-height: #{$surfaceduo_vh}) {
+        @content;
+    }
+}
+$nokian9_vw : 480px;
+$nokian9_vh : 854px;
+@mixin nokian9 {
+    @media only screen and (max-width: #{$nokian9_vw}) and (max-height: #{$nokian9_vh}) {
+        @content;
+    }
+}
+//@media only screen and (max-width: 450px) and (max-height: 600px) {
+//}
+
+$iphone678plus_vw : 414px;
+$iphone678plus_vh : 736px;
+@mixin iphone678plus {
+    @media only screen and (max-width: #{$iphone678plus_vw}) and (max-height: #{$iphone678plus_vh}) {
+        @content;
+    }
+}
+$nexus5x_vw : 412px;
+$nexus6_vw : 412px;
+$nexus6p_vw : 412px;
+
+$nexus5x_vh : 732px;
+$nexus6_vh : 732px;
+$nexus6p_vh : 732px;
+@mixin nexus5x {
+    @media only screen and (max-width: #{$nexus5x_vw}) and (max-height: #{$nexus5x_vh}) {
+        @content;
+    }
+}
+@mixin nexus6 {
+    @media only screen and (max-width: #{$nexus6_vw}) and (max-height: #{$nexus6_vh}) {
+        @content;
+    }
+}
+@mixin nexus6p {
+    @media only screen and (max-width: #{$nexus6p_vw}) and (max-height: #{$nexus6p_vh}) {
+        @content;
+    }
+}
+$pixel2xl_vw : 411px;
+$pixel2xl_vh : 823px;
+@mixin pixel2xl {
+    @media only screen and (max-width: #{$pixel2xl_vw}) and (max-height: #{$pixel2xl_vh}) {
+        @content;
+    }
+}
+$pixel2_vw : 411px;
+$pixel2_vh : 731px;
+@mixin pixel2 {
+    @media only screen and (max-width: #{$pixel2_vw}) and (max-height: #{$pixel2_vh}) {
+        @content;
+    }
+}
+$lgoptimusl70_vw : 384px;
+$nexus4_vw : 384px;
+
+$lgoptimusl70_vh : 640px;
+$nexus4_vh : 640px;
+@mixin lgoptimusl70 {
+    @media only screen and (max-width: #{$lgoptimusl70_vw}) and (max-height: #{$lgoptimusl70_vh}) {
+        @content;
+    }
+}
+@mixin nexus4 {
+    @media only screen and (max-width: #{$nexus4_vw}) and (max-height: #{$nexus4_vh}) {
+        @content;
+    }
+}
+$iphonex_vw : 375px;
+$iphonex_vh : 812px;
+@mixin iphonex {
+    @media only screen and (max-width: #{$iphonex_vw}) and (max-height: #{$iphonex_vh}) {
+        @content;
+    }
+}
+$iphone678_vw : 375px;
+$iphone678_vh : 667px;
+@mixin iphone678 {
+    @media only screen and (max-width: #{$iphone678_vw}) and (max-height: #{$iphone678_vh}) {
+        @content;
+    }
+}
+$blackberryz30_vw : 360px;
+$galaxynote3_vw : 360px;
+$galaxynoteii_vw : 360px;
+$galaxysiii_vw : 360px;
+$microsoftlumia950_vw : 360px;
+$motog4_vw : 360px;
+$nexus5_vw : 360px;
+$galaxys5_vw : 360px;
+
+$blackberryz30_vh : 640px;
+$galaxynote3_vh : 640px;
+$galaxynoteii_vh : 640px;
+$galaxysiii_vh : 640px;
+$microsoftlumia950_vh : 640px;
+$nexus5_vh : 640px;
+$motog4_vh : 640px;
+$galaxys5_vh : 640px;
+
+@mixin blackberryz30 {
+    @media only screen and (max-width: #{$blackberryz30_vw}) and (max-height: #{$blackberryz30_vh}) {
+        @content;
+    }
+}
+@mixin galaxynote3 {
+    @media only screen and (max-width: #{$galaxynote3_vw}) and (max-height: #{$galaxynote3_vh}) {
+        @content;
+    }
+}
+@mixin galaxynoteii {
+    @media only screen and (max-width: #{$galaxynoteii_vw}) and (max-height: #{$galaxynoteii_vh}) {
+        @content;
+    }
+}
+@mixin galaxysiii {
+    @media only screen and (max-width: #{$galaxysiii_vw}) and (max-height: #{$galaxysiii_vh}) {
+        @content;
+    }
+}
+@mixin microsoftlumia950 {
+    @media only screen and (max-width: #{$microsoftlumia950_vw}) and (max-height: #{$microsoftlumia950_vh}) {
+        @content;
+    }
+}
+@mixin motog4 {
+    @media only screen and (max-width: #{$motog4_vw}) and (max-height: #{$motog4_vh}) {
+        @content;
+    }
+}
+@mixin nexus5 {
+    @media only screen and (max-width: #{$nexus5_vw}) and (max-height: #{$nexus5_vh}) {
+        @content;
+    }
+}
+@mixin galaxys5 {
+    @media only screen and (max-width: #{$galaxys5_vw}) and (max-height: #{$galaxys5_vh}) {
+        @content;
+    }
+}
+$iphone5se_vw : 320px;
+$iphone5se_vh : 568px;
+@mixin iphone5se {
+    @media only screen and (max-width: #{$iphone5se_vw}) and (max-height: #{$iphone5se_vh}) {
+        @content;
+    }
+}
+$nokialumia520_vw : 320px;
+$nokialumia520_vh : 533px;
+@mixin nokialumia520 {
+    @media only screen and (max-width: #{$nokialumia520_vw}) and (max-height: #{$nokialumia520_vh}) {
+        @content;
+    }
+}
+$iphone4_vw : 320px;
+$iphone4_vh : 480px;
+@mixin iphone4 {
+    @media only screen and (max-width: #{$iphone4_vw}) and (max-height: #{$iphone4_vh}) {
+        @content;
+    }
+}
+$galaxyfold_vw : 280px;
+$galaxyfold_vh : 653px;
+@mixin galaxyfold {
+    @media only screen and (max-width: #{$galaxyfold_vw}) and (max-height: #{$galaxyfold_vh}) {
+        @content;
+    }
+}
+$jiophone2_vw : 240px;
+$jiophone2_vh : 320px;
+@mixin jiophone2 {
+    @media only screen and (max-width: #{$jiophone2_vw}) and (max-height: #{$jiophone2_vh}) {
+        @content;
+    }
+}

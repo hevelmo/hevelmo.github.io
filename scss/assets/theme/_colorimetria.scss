@@ -1,0 +1,43 @@
+// Text Color
+.text-color-white {
+    color: $oc_hex_color_white;
+}
+/* Primary color */
+@include textcolorclass($oc_hex_color_primary, $text_class_primary_name);
+/* Secondary color */
+@include textcolorclass($oc_hex_color_secondary, $text_class_secondary_name);
+/* Dark color */
+@include textcolorclass($oc_hex_color_dark, $text_class_dark_name);
+/* White color */
+@include textcolorclass($oc_hex_color_white, $text_class_white_name);
+/* Gama Color Entry color */
+@include textcolorclass($oc_hex_gama_entry, $text_class_gamma_entry_name);
+/* Gama Color Middle color */
+@include textcolorclass($oc_hex_gama_middle, $text_class_gamma_middle_name);
+// Background color
+/* Primary color */
+@include backgroundcolorclass($oc_hex_color_primary, $bg_class_primary_name);
+/* Secondary color */
+@include backgroundcolorclass($oc_hex_color_secondary, $bg_class_secondary_name);
+/* Dark color */
+@include backgroundcolorclass($oc_hex_color_dark, $bg_class_dark_name);
+/* White color */
+@include backgroundcolorclass($oc_hex_color_white, $bg_class_white_name);
+/* Gama Color Entry color */
+@include backgroundcolorclass($oc_hex_gama_entry, $bg_class_gamma_entry_name);
+/* Gama Color Middle color */
+@include backgroundcolorclass($oc_hex_gama_middle, $bg_class_gamma_middle_name);
+// Gradients Gamma Color
+/* Gama gradient entry */
+@include gradientclass($_direction_135, $gamma_entry, $gradient_entry_name);
+/* Gama gradient middle */
+@include gradientclass($_direction_135, $gamma_middle, $gradient_middle_name);
+// Paterns gamma
+/* Pattern Yellow Dark */
+@include patternbackgroundclass($pattern_data_image_yellow_dark, $pattern_yellow_dark_name, $bg_fondo_grey);
+@include patternbackgroundclass($pattern_data_image_yellow, $pattern_yellow_name, $bg_fondo_dark);
+@include patternbackgroundclass($pattern_data_image_dark, $pattern_dark_name, $bg_fondo_grey);
+@include patternbackgroundclass($pattern_data_image_white, $pattern_white_name, $bg_fondo_dark);
+// Gradient whit pattern
+@include gradientwithpattern($_direction_to_right, $gamma_slide_middle, $gradient_pattern_middle_name, $pattern-data-image-orange-smoke);
+@include gradientwithpattern($_direction_to_right, $gamma_slide_orange_smoke, $gradient_pattern_yellow_name, $pattern-data-image-orange-smoke);

@@ -1,0 +1,24 @@
+// Headings h1 to h6
+@include eachheadings($fontsizebase, $fontheadingscale);
+//
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    font-family: "panton-bold-italic";
+}
+// Aplicativos -> Presentacion
+.#{$titulo-a-class-name} { font-size: $titulo-a; }
+.#{$titulo-b-class-name} { font-size: $titulo-b; }
+.#{$dato-class-name} { font-size: $dato; }
+// Aplicatiovos -> Documentaario
+.#{$portada-titulo-class-name} { font-size: $portada-titulo; }
+.#{$banner-primary-titulo-class-name} { font-size: $banner-primary-titulo; }
+.#{$banner-secondary-titulo-class-name} { font-size: $banner-secondary-titulo; }
+.#{$descripcion-class-name} { font-size: $descripcion; }
+.#{$titulo-estandar-class-name} { font-size: $titulo-estandar; }
+.#{$titulo-banner-mini-class-name} { font-size: $titulo-banner-mini; }
+.#{$descripcion-banner-class-name} { font-size: $descripcion-banner; }
+.#{$descripcion-corta-class-name} { font-size: $descripcion-corta; }
+.#{$descripcion-banner-mini-class-name} { font-size: $descripcion-banner-mini; }
+.#{$descripcion-estandar-class-name} { font-size: $descripcion-estandar; }
+.#{$footer-tags-class-name} { font-size: $footer-tags; }
+.#{$legal-info-class-name} { font-size: $legal-info; }
+.#{$icon-description-class-name} { font-size: $icon-description; }

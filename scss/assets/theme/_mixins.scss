@@ -1,0 +1,282 @@
+// Media queries
+    //
+    $_mq_breakpoints_sm: 540px;
+    $_mq_breakpoints_md: 720px;
+    $_mq_breakpoints_lg: 960px;
+    $_mq_breakpoints_xl: 1140px;
+
+    @mixin _mq_breakpoint( $_mq_media ) {
+        @if $_mq_media == sm {
+            @media (max-width: $_mq_breakpoints_sm) { @content; }
+        }
+        @else if $_mq_media == sm {
+            @media (min-width: $_mq_breakpoints_sm) and (max-width: $_mq_breakpoints_md) { @content; }
+        }
+        @else if $_mq_media == md {
+            @media (min-width: $_mq_breakpoints_md) and (max-width: $_mq_breakpoints_lg) { @content; }
+        }
+        @else if $_mq_media == lg {
+            @media (min-width: $_mq_breakpoints_lg) { @content; }
+        }
+    }
+
+    // v2
+    ///
+    /// Generates a media query based on a list of conditions
+    ///
+    /// @param {Arglist}   $conditions  - Media query conditions
+    ///
+    /// @example scss - With a single set breakpoint
+    ///  @include media('>phone') { }
+    ///
+    /// @example scss - With two set breakpoints
+    ///  @include media('>phone', '<=tablet') { }
+    ///
+    /// @example scss - With custom values
+    ///  @include media('>=358px', '<850px') { }
+    ///
+    /// @example scss - With set breakpoints with custom values
+    ///  @include media('>desktop', '<=1350px') { }
+    ///
+    /// @example scss - With a static expression
+    ///  @include media('retina2x') { }
+    ///
+    /// @example scss - Mixing everything
+    ///  @include media('>=350px', '<tablet', 'retina3x') { }
+    ///
+    @mixin media($conditions...) {
+        @for $i from 1 through length($conditions) {
+            $conditions: set-nth($conditions, $i, parse-expression(nth($conditions, $i)));
+        }
+
+        $branches: get-query-branches($conditions);
+        $query: "";
+
+        @each $branch in $branches {
+            @if (str-length($query) != 0) {
+                $query: $query + ", ";
+            }
+
+            $query: $query + $branch;
+        }
+
+        @media #{$query} {
+            @content;
+        }
+    }
+    @function get-query-branches($expressions) {
+        $result: "";
+        $has-groups: false;
+
+        // Getting initial snapshot and looking for groups
+        @each $expression in $expressions {
+            @if (str-length($result) != 0) {
+                $result: $result + " and ";
+            }
+
+            @if (type-of($expression) == "string") {
+                $result: $result + $expression;
+            } @else if (type-of($expression) == "list") {
+                $result: $result + nth($expression, 1);
+                $has-groups: true;
+            } @else {
+                @warn '#{$expression} is not a valid expression.';
+            }
+        }
+
+        // If we have groups, we have to create all possible combinations
+        @if $has-groups {
+            @each $expression in $expressions {
+                @if (type-of($expression) == "list") {
+                    $first: nth($expression, 1);
+
+                    @each $member in $expression {
+                        @if ($member != $first) {
+                            @each $partial in $result {
+                                $result: join($result, str-replace-first($first, $member, $partial));
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        @return $result;
+    }
+    @function parse-expression($expression) {
+        $operator: "";
+        $value: "";
+        $element: "";
+        $result: "";
+        $is-width: true;
+
+        @if (type-of($expression) != "string") {
+            @warn 'Expression with type `#{type-of($expression)}` detected, string expected.';
+        }
+
+        // Separating the operator from the rest of the expression
+        @if (str-slice($expression, 2, 2) == "=") {
+            $operator: str-slice($expression, 1, 2);
+            $value: str-slice($expression, 3);
+        } @else {
+            $operator: str-slice($expression, 1, 1);
+            $value: str-slice($expression, 2);
+        }
+
+        // Checking what type of expression we're dealing with
+        @if map-has-key($breakpoints, $value) {
+            $result: map-get($breakpoints, $value);
+        } @else if map-has-key($media-expressions, $expression) {
+            $result: map-get($media-expressions, $expression);
+            $is-width: false;
+        } @else {
+            $result: to-number($value);
+        }
+
+        @if ($is-width) {
+            $unit: unit($result);
+            $interval: 0;
+
+            @if (map-has-key($unit-intervals, $unit)) {
+                $interval: map-get($unit-intervals, $unit);
+            } @else {
+                @warn 'Unknown unit: #{$unit}';
+            }
+
+            @if ($operator == ">") {
+                $element: "(min-width: #{$result + $interval})";
+            } @else if ($operator == "<") {
+                $element: "(max-width: #{$result - $interval})";
+            } @else if ($operator == ">=") {
+                $element: "(min-width: #{$result})";
+            } @else if ($operator == "<=") {
+                $element: "(max-width: #{$result})";
+            } @else {
+                @warn '#{$expression} is missing an operator.';
+            }
+        } @else {
+            $element: $result;
+        }
+
+        @return $element;
+    }
+    @function str-replace-first($search, $replace, $subject) {
+        $search-start: str-index($subject, $search);
+
+        @if $search-start == null {
+            @return $subject;
+        }
+
+        $result: str-slice($subject, 0, $search-start - 1);
+        $result: $result + $replace;
+        $result: $result + str-slice($subject, $search-start + str-length($search));
+
+        @return $result;
+    }
+    @function to-number($string) {
+        // Matrices
+        $strings: "0" "1" "2" "3" "4" "5" "6" "7" "8" "9";
+        $numbers: 0 1 2 3 4 5 6 7 8 9;
+
+        // Result
+        $result: 0;
+        $divider: 0;
+        $minus: false;
+
+        // Looping through all characters
+        @for $i from 1 through str-length($string) {
+            $character: str-slice($string, $i, $i);
+            $index: index($strings, $character);
+
+            @if $character == "-" {
+                $minus: true;
+            } @else if $character == "." {
+                $divider: 1;
+            } @else {
+                @if type-of($index) != "number" {
+                    $result: if($minus, $result * -1, $result);
+                    @return _length($result, str-slice($string, $i));
+                }
+
+                $number: nth($numbers, $index);
+
+                @if $divider == 0 {
+                    $result: $result * 10;
+                } @else {
+                    // Move the decimal dot to the left
+                    $divider: $divider * 10;
+                    $number: $number / $divider;
+                }
+
+                $result: $result + $number;
+            }
+        }
+
+        @return if($minus, $result * -1, $result);
+    }
+    @function _length($number, $unit) {
+        $strings: "px" "cm" "mm" "%" "ch" "pica" "in" "em" "rem" "pt" "pc" "ex" "vw" "vh" "vmin" "vmax";
+        $units: 1px 1cm 1mm 1% 1ch 1pica 1in 1em 1rem 1pt 1pc 1ex 1vw 1vh 1vmin 1vmax;
+        $index: index($strings, $unit);
+
+        @if type-of($index) != "number" {
+            @warn 'Unknown unit `#{$unit}`.';
+            @return false;
+        }
+
+        @return $number * nth($units, $index);
+    }
+//
+// colorimetria
+    // text color gamma
+    @mixin textcolorclass($color, $text_class) {
+        .#{$text_class} {
+            color: $color;
+        }
+    }
+    // gackground color gamma
+    @mixin backgroundcolorclass($background, $text_class) {
+        .#{$text_class} {
+            background: $background;
+        }
+    }
+    // Gradient gamma
+    @mixin gradientclass($direction, $list, $gamma) {
+        .#{$gamma} {
+            background: -webkit-linear-gradient($direction, $list);
+            background: -moz-linear-gradient($direction, $list);
+            background: -o-linear-gradient($direction, $list);
+            background: linear-gradient($direction, $list);
+        }
+    }
+    @mixin gradientwithpattern($direction, $list, $gamma, $pattern) {
+        .#{$gamma} {
+            background: url($pattern), -webkit-linear-gradient($direction, $list);
+            background: url($pattern), -moz-linear-gradient($direction, $list);
+            background: url($pattern), -o-linear-gradient($direction, $list);
+            background: url($pattern), linear-gradient($direction, $list);
+        }
+    }
+    // Pattern background
+    @mixin patternbackgroundclass($pattern_background, $text_class, $fondo) {
+        .#{$text_class} {
+            background: $fondo url($pattern_background);
+            background-size: 80px 80px;
+            background-position: 0px 0px;
+            background-repeat: repeat;
+        }
+    }
+// Tipografia
+    // headings font size
+    @mixin eachheadings($bfz, $hs) {
+        @for $i from 1 through 6 {
+            h#{$i}, .h#{$i} {
+                font-size: $bfz +  $hs * ( 6 - $i );
+            }
+        }
+    }
+// Estructure
+//
+
+// Header _oc-header_nav
+    //

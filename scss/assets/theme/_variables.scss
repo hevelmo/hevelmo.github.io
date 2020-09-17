@@ -1,0 +1,189 @@
+// Utils
+$_pos_r : relative !default;
+$_pos_a : absolute !default;
+$_pos_f : fixed !default;
+// Color Plano
+// /**
+  // *    Color Hexadecimal
+  // *
+  // *    Primary -> #f4e600
+  // *    Secondary -> #f7be00
+  // *    Dark -> #000000
+  // *    White -> #ffffff
+  // *
+  // **/
+  // variables
+  $oc_hex_color_primary: #f4e600;
+  $oc_hex_color_secondary: #f7be00;
+  $oc_hex_color_dark: #000000;
+
+  $oc_hex_color_white: #ffffff;
+
+// Gamas para degradados
+// /**
+  // *    Degradados
+  // *
+  // *    Gama baja
+  // *    Yellow Entry -> #f4e600
+  // *
+  // *    Gama media
+  // *    Orange Middle -> #be5a1e
+  // **/
+  // variables
+
+  $oc_hex_gama_entry: #f4e600;
+  $oc_hex_gama_middle: #be5a1e;
+
+  $oc_rgba_gama_entry: rgb(242,229,0,0.89);
+  $oc_rgba_gama_middle: rgb(190,90,30,0.89);
+  $oc_rgba_gama_orange_smoke: rgb(250,191,18,0.89);
+
+  // Degradados
+  // /**
+    // *    Degradados gama baja
+    // *
+    // *    Gama baja
+    // *    Yellow Entry -> #f4e600
+    // *
+    // *    Gama media
+    // *    Orange Middle -> #be5a1e
+    // **/
+    // variables
+    $_direction_135: 135deg;
+    $_direction_to_right: to right;
+    $gamma_entry: $oc_hex_gama_entry 0%, $oc_hex_color_secondary 100%;
+    $gamma_middle: $oc_hex_gama_entry 0%, $oc_hex_gama_middle 100%;
+    $gamma_slide_middle : $oc_rgba_gama_middle 0%, $oc_rgba_gama_entry 100%;
+    $gamma_slide_orange_smoke : $oc_rgba_gama_orange_smoke 0%, $oc_rgba_gama_entry 100%;
+// Patterns
+    // /**
+      // *    Pattern Yellow Dark
+      // *
+      // *    Pattern Yellow
+      // *
+      // *    Pattern Dark
+      // **/
+      // variables
+
+
+
+
+
+    // Pattern Yellow Dark
+    $pattern_data_image_yellow_dark : "../img/patterns/pattern-yellow-dark.svg";
+    // Pattern Yellow
+    $pattern_data_image_yellow : "../img/patterns/pattern-primary-yellow.svg";
+    // Pattern Dark
+    $pattern_data_image_dark : "../img/patterns/pattern-dark.svg";
+    //  Pattern white
+    $pattern-data-image-white : "../img/patterns/pattern-white-opc-90.svg";
+    //  Pattern orange smoke
+    $pattern-data-image-orange-smoke : "../img/patterns/pattern-orange-smoke.svg";
+
+    $bg_fondo_grey : #848484;
+    $bg_fondo_dark : #000000;
+// /**
+    // *    TEXT CLASSES NAME
+    // *
+    // **/
+    // variables
+    // Primary Color
+    $text_class_primary_name : "text-color-plano-yellow-primary";
+    // Secondary Color
+    $text_class_secondary_name : "text-color-plano-yellow-secondary";
+    // Dark Color
+    $text_class_dark_name : "text-color-plano-dark";
+    // White Color
+    $text_class_white_name : "text-color-plano-white";
+    // Gama Entry Color
+    $text_class_gamma_entry_name : "text-color-plano-gama-entry";
+    // Gama Middle Color
+    $text_class_gamma_middle_name : "text-color-plano-gama-midle";
+// /**
+    // *    BACKGROUND CLASSES NAME
+    // *
+    // **/
+    // variables
+    // Primary Color
+    $bg_class_primary_name : "bg-color-plano-yellow-primary";
+    // Secondary Color
+    $bg_class_secondary_name : "bg-color-plano-yellow-secondary";
+    // Dark Color
+    $bg_class_dark_name : "bg-color-plano-dark";
+    // White Color
+    $bg_class_white_name : "bg-color-plano-white";
+    // Gama Entry Color
+    $bg_class_gamma_entry_name : "bg-color-plano-gama-entry";
+    // Gama Middle Color
+    $bg_class_gamma_middle_name : "bg-color-plano-gama-midle";
+// /**
+    // *    GRADIENT CLASSES NAME
+    // *
+    // **/
+    // variables
+    // Gama Gradiente Entry
+    $gradient_entry_name: "gradient-gama-entry";
+    // Gama Gradient Middle
+    $gradient_middle_name: "gradient-gama-middle";
+// /**
+    // *    PATTERNS CLASSES NAME
+    // *
+    // **/
+    // variables
+    $pattern_yellow_dark_name : "pattern-yellow-dark-name";
+    $pattern_yellow_name : "pattern-yellow-name";
+    $pattern_dark_name : "pattern-dark-name";
+    $pattern_white_name : "pattern-white-name";
+// /**
+    // *    GRADIENT WITH PATTERNS CLASSES NAME
+    // *
+    // **/
+    // variables
+    $gradient_pattern_yellow_dark_name : "gradient-pattern-yellow-dark-name";
+    $gradient_pattern_yellow_name : "gradient-pattern-yellow-name";
+    $gradient_pattern_dark_name : "gradient-pattern-dark-name";
+    $gradient_pattern_white_name : "gradient-pattern-white-name";
+    $gradient_pattern_middle_name : "gradient-pattern-middle-name";
+
+// Tipografia
+    // Classe types name
+    $titulo-a-class-name : "type-titulo-a";
+    $titulo-b-class-name : "type-titulo-b";
+    $dato-class-name : "type-dato";
+
+    $portada-titulo-class-name : "type-portada-titulo";
+    $banner-primary-titulo-class-name : "type-banner-primary-titulo";
+    $banner-secondary-titulo-class-name : "type-banner-secondary-titulo";
+    $descripcion-class-name : "type-descripcion";
+    $titulo-estandar-class-name : "type-titulo-estandar";
+    $titulo-banner-mini-class-name : "type-titulo-banner-mini";
+    $descripcion-banner-class-name : "type-descripcion-banner";
+    $descripcion-corta-class-name : "type-descripcion-corta";
+    $descripcion-banner-mini-class-name : "type-descripcion-banner-mini";
+    $descripcion-estandar-class-name : "type-descripcion-estandar";
+    $footer-tags-class-name : "type-footer-tags";
+    $legal-info-class-name : "type-legal-info";
+    $icon-description-class-name : "type-icon-description";
+    /* Headings */
+    $fontsizebase : 16px !default;
+    $fontheadingscale : 5 !default;
+    // Aplicativos -> Presentacion
+    $titulo-a : 96px;
+    $titulo-b : 72px;
+    $dato : 56px;
+    // Aplicatiovos -> Documentaario
+    $portada-titulo : 50px;
+    $banner-primary-titulo : 40px;
+    $banner-secondary-titulo : 32px;
+    $descripcion : 32px;
+    $titulo-estandar : 20px;
+    $titulo-banner-mini : 20px;
+    $descripcion-banner : 20px;
+    $descripcion-corta : 18px;
+    $descripcion-banner-mini : 18px;
+    $descripcion-estandar : 15px;
+    $footer-tags : 12px;
+    $legal-info : 12px;
+    $icon-description : 12px;
+// Estructure
+//
