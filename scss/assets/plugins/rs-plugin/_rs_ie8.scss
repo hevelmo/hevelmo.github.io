@@ -392,7 +392,7 @@
 	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.6) !important;
 	font-size: 15px;
 	line-height: 45px !important;
-	background: url(../images/gradient/g30.png) repeat-x top;
+	background: url(../img/rs/gradient/g30.png) repeat-x top;
 	font-family: arial, sans-serif;
 	font-weight: bold;
 	letter-spacing: -1px;
@@ -449,7 +449,7 @@
 	padding: 9px 20px;
 	font-size: 19px;
 	line-height: 57px !important;
-	background: url(../images/gradient/g40.png) repeat-x top;
+	background: url(../img/rs/gradient/g40.png) repeat-x top;
 	&:hover {
 		background-position: bottom, 15px 11px;
 	}
@@ -636,21 +636,21 @@
 	-o-user-select: none;
 }
 .tp-bannershadow.tp-shadow1 {
-	background: url(../assets/shadow1.png) no-repeat;
+	background: url(../img/rs/shadow1.png) no-repeat;
 	background-size: 100%;
 	width: 890px;
 	height: 60px;
 	bottom: -60px;
 }
 .tp-bannershadow.tp-shadow2 {
-	background: url(../assets/shadow2.png) no-repeat;
+	background: url(../img/rs/shadow2.png) no-repeat;
 	background-size: 100%;
 	width: 890px;
 	height: 60px;
 	bottom: -60px;
 }
 .tp-bannershadow.tp-shadow3 {
-	background: url(../assets/shadow3.png) no-repeat;
+	background: url(../img/rs/shadow3.png) no-repeat;
 	background-size: 100%;
 	width: 890px;
 	height: 60px;
@@ -702,7 +702,7 @@
 .tp-bullets.simplebullets.navbar {
 	border: 1px solid #666;
 	border-bottom: 1px solid #444;
-	background: url(../assets/boxed_bgtile.png);
+	background: url(../img/rs/boxed_bgtile.png);
 	height: 40px;
 	padding: 0px 10px;
 	-webkit-border-radius: 5px;
@@ -711,7 +711,7 @@
 	.bullet {
 		cursor: pointer;
 		position: relative;
-		background: url(../assets/bullet_boxed.png) no-Repeat top left;
+		background: url(../img/rs/bullet_boxed.png) no-Repeat top left;
 		width: 18px;
 		height: 19px;
 		margin-right: 5px;
@@ -732,7 +732,7 @@
 	}
 }
 .tp-bullets.simplebullets.navbar-old {
-	background: url(../assets/navigdots_bgtile.png);
+	background: url(../img/rs/navigdots_bgtile.png);
 	height: 35px;
 	padding: 0px 10px;
 	-webkit-border-radius: 5px;
@@ -741,7 +741,7 @@
 	.bullet {
 		cursor: pointer;
 		position: relative;
-		background: url(../assets/navigdots.png) no-Repeat bottom left;
+		background: url(../img/rs/navigdots.png) no-Repeat bottom left;
 		width: 15px;
 		height: 15px;
 		margin-left: 5px !important;
@@ -760,7 +760,7 @@
 	.bullet {
 		cursor: pointer;
 		position: relative;
-		background: url(../assets/bullet.png) no-Repeat top left;
+		background: url(../img/rs/bullet.png) no-Repeat top left;
 		width: 20px;
 		height: 20px;
 		margin-right: 0px;
@@ -782,7 +782,7 @@
 	.bullet {
 		cursor: pointer;
 		position: relative;
-		background: url(../assets/bullets.png) no-Repeat bottom left;
+		background: url(../img/rs/bullets.png) no-Repeat bottom left;
 		width: 23px;
 		height: 23px;
 		margin-right: 0px;
@@ -797,7 +797,7 @@
 	.bullet {
 		cursor: pointer;
 		position: relative;
-		background: url(../assets/bullets2.png) no-Repeat bottom left;
+		background: url(../img/rs/bullets2.png) no-Repeat bottom left;
 		width: 19px;
 		height: 19px;
 		margin-right: 0px;
@@ -812,7 +812,7 @@
 	.bullet {
 		cursor: pointer;
 		position: relative;
-		background: url(../assets/bullets2.png) no-Repeat bottom left;
+		background: url(../img/rs/bullets2.png) no-Repeat bottom left;
 		width: 19px;
 		height: 19px;
 		margin-right: 0px;
@@ -853,7 +853,7 @@
 	z-index: 100;
 	cursor: pointer;
 	position: relative;
-	background: url(../assets/large_left.png) no-Repeat top left;
+	background: url(../img/rs/large_left.png) no-Repeat top left;
 	width: 40px;
 	height: 40px;
 	&:hover {
@@ -864,7 +864,7 @@
 	z-index: 100;
 	cursor: pointer;
 	position: relative;
-	background: url(../assets/large_right.png) no-Repeat top left;
+	background: url(../img/rs/large_right.png) no-Repeat top left;
 	width: 40px;
 	height: 40px;
 	&:hover {
@@ -875,7 +875,7 @@
 	z-index: 100;
 	cursor: pointer;
 	position: relative;
-	background: url(../assets/small_left.png) no-Repeat top left;
+	background: url(../img/rs/small_left.png) no-Repeat top left;
 	width: 19px;
 	height: 14px;
 	margin-right: 0px;
@@ -886,7 +886,7 @@
 	z-index: 100;
 	cursor: pointer;
 	position: relative;
-	background: url(../assets/small_right.png) no-Repeat top left;
+	background: url(../img/rs/small_right.png) no-Repeat top left;
 	width: 19px;
 	height: 14px;
 	margin-right: 0px;
@@ -897,7 +897,7 @@
 	z-index: 100;
 	cursor: pointer;
 	position: relative;
-	background: url(../assets/arrow_left.png) no-Repeat top left;
+	background: url(../img/rs/arrow_left.png) no-Repeat top left;
 	width: 26px;
 	height: 26px;
 	margin-right: 0px;
@@ -908,7 +908,7 @@
 	z-index: 100;
 	cursor: pointer;
 	position: relative;
-	background: url(../assets/arrow_right.png) no-Repeat top left;
+	background: url(../img/rs/arrow_right.png) no-Repeat top left;
 	width: 26px;
 	height: 26px;
 	margin-right: 0px;
@@ -919,7 +919,7 @@
 	z-index: 100;
 	cursor: pointer;
 	position: relative;
-	background: url(../assets/small_left_boxed.png) no-Repeat top left;
+	background: url(../img/rs/small_left_boxed.png) no-Repeat top left;
 	width: 20px;
 	height: 15px;
 	float: left;
@@ -930,7 +930,7 @@
 	z-index: 100;
 	cursor: pointer;
 	position: relative;
-	background: url(../assets/small_right_boxed.png) no-Repeat top left;
+	background: url(../img/rs/small_right_boxed.png) no-Repeat top left;
 	width: 20px;
 	height: 15px;
 	float: left;
@@ -941,7 +941,7 @@
 	z-index: 100;
 	cursor: pointer;
 	position: relative;
-	background: url(../assets/arrowleft.png) no-Repeat top left;
+	background: url(../img/rs/arrowleft.png) no-Repeat top left;
 	width: 9px;
 	height: 16px;
 	float: left;
@@ -952,7 +952,7 @@
 	z-index: 100;
 	cursor: pointer;
 	position: relative;
-	background: url(../assets/arrowright.png) no-Repeat top left;
+	background: url(../img/rs/arrowright.png) no-Repeat top left;
 	width: 9px;
 	height: 16px;
 	float: left;
@@ -969,7 +969,7 @@
 	z-index: 100;
 	cursor: pointer;
 	position: relative;
-	background: url(../assets/arrow_left2.png) no-Repeat top left;
+	background: url(../img/rs/arrow_left2.png) no-Repeat top left;
 	width: 12px;
 	height: 17px;
 	float: left;
@@ -980,7 +980,7 @@
 	z-index: 100;
 	cursor: pointer;
 	position: relative;
-	background: url(../assets/arrow_right2.png) no-Repeat top left;
+	background: url(../img/rs/arrow_right2.png) no-Repeat top left;
 	width: 12px;
 	height: 17px;
 	float: left;
@@ -991,7 +991,7 @@
 	z-index: 100;
 	cursor: pointer;
 	position: relative;
-	background: url(../assets/arrow_left2.png) no-Repeat top left;
+	background: url(../img/rs/arrow_left2.png) no-Repeat top left;
 	width: 12px;
 	height: 17px;
 	float: left;
@@ -1002,7 +1002,7 @@
 	z-index: 100;
 	cursor: pointer;
 	position: relative;
-	background: url(../assets/arrow_right2.png) no-Repeat top left;
+	background: url(../img/rs/arrow_right2.png) no-Repeat top left;
 	width: 12px;
 	height: 17px;
 	float: left;
@@ -1013,7 +1013,7 @@
 	z-index: 100;
 	cursor: pointer;
 	position: relative;
-	background: url(../assets/large_left.png) no-Repeat 0 0;
+	background: url(../img/rs/large_left.png) no-Repeat 0 0;
 	width: 40px;
 	height: 40px;
 }
@@ -1021,7 +1021,7 @@
 	z-index: 100;
 	cursor: pointer;
 	position: relative;
-	background: url(../assets/large_right.png) no-Repeat 0 0;
+	background: url(../img/rs/large_right.png) no-Repeat 0 0;
 	width: 40px;
 	height: 40px;
 }
@@ -1086,7 +1086,7 @@
 .tp-bannertimer {
 	width: 100%;
 	height: 10px;
-	background: url(../assets/timer.png);
+	background: url(../img/rs/timer.png);
 	position: absolute;
 	z-index: 200;
 	top: 0px;
@@ -1101,7 +1101,7 @@
 		div {
 			width: 3000px;
 			height: 1500px;
-			background: url(../assets/coloredbg.png) repeat;
+			background: url(../img/rs/coloredbg.png) repeat;
 		}
 	}
 }
@@ -1110,12 +1110,12 @@
 		div {
 			width: 3000px;
 			height: 1500px;
-			background: url(../assets/coloredbg.png) repeat;
+			background: url(../img/rs/coloredbg.png) repeat;
 		}
 	}
 }
 .tp-loader {
-	background: url(../assets/loader.gif) no-repeat 10px 10px;
+	background: url(../img/rs/loader.gif) no-repeat 10px 10px;
 	background-color: #fff;
 	margin: -22px -22px;
 	top: 50%;
@@ -1129,7 +1129,7 @@
 	-webkit-border-radius: 3px;
 }
 .tp-transparentimg {
-	content: "url(../assets/transparent.png)";
+	content: "url(../img/rs/transparent.png)";
 }
 .tp-3d {
 	-webkit-transform-style: preserve-3d;

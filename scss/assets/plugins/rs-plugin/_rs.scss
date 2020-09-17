@@ -1,4 +1,5 @@
-@-webkit-keyframes "tp-rotateplane" {
+@import '../../font/fontface';
+@-webkit-keyframes tp-rotateplane {
 	0% {
 		-webkit-transform: perspective(120px);
 	}
@@ -9,7 +10,7 @@
 		-webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg);
 	}
 }
-@keyframes "tp-rotateplane" {
+@keyframes tp-rotateplane {
 	0% {
 		transform: perspective(120px) rotateX(0deg) rotateY(0deg);
 		-webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
@@ -23,7 +24,7 @@
 		-webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
 	}
 }
-@-webkit-keyframes "tp-scaleout" {
+@-webkit-keyframes tp-scaleout {
 	0% {
 		-webkit-transform: scale(0.0);
 	}
@@ -32,7 +33,7 @@
 		opacity: 0;
 	}
 }
-@keyframes "tp-scaleout" {
+@keyframes tp-scaleout {
 	0% {
 		transform: scale(0.0);
 		-webkit-transform: scale(0.0);
@@ -43,7 +44,7 @@
 		opacity: 0;
 	}
 }
-@-webkit-keyframes "tp-bouncedelay" {
+@-webkit-keyframes tp-bouncedelay {
 	0%,80%,100% {
 		-webkit-transform: scale(0.0);
 	}
@@ -51,7 +52,7 @@
 		-webkit-transform: scale(1.0);
 	}
 }
-@keyframes "tp-bouncedelay" {
+@keyframes tp-bouncedelay {
 	0%,80%,100% {
 		transform: scale(0.0);
 		-webkit-transform: scale(0.0);
@@ -61,18 +62,18 @@
 		-webkit-transform: scale(1.0);
 	}
 }
-@-webkit-keyframes "tp-rotate" {
+@-webkit-keyframes tp-rotate {
 	100% {
 		-webkit-transform: rotate(360deg);
 	}
 }
-@keyframes "tp-rotate" {
+@keyframes tp-rotate {
 	100% {
 		transform: rotate(360deg);
 		-webkit-transform: rotate(360deg);
 	}
 }
-@-webkit-keyframes "tp-bounce" {
+@-webkit-keyframes tp-bounce {
 	0%,100% {
 		-webkit-transform: scale(0.0);
 	}
@@ -80,7 +81,7 @@
 		-webkit-transform: scale(1.0);
 	}
 }
-@keyframes "tp-bounce" {
+@keyframes tp-bounce {
 	0%,100% {
 		transform: scale(0.0);
 		-webkit-transform: scale(0.0);
@@ -90,13 +91,14 @@
 		-webkit-transform: scale(1.0);
 	}
 }
-@font-face {
+@include fontFace('revicons','../font/revicons');
+/*@font-face {
 	font-family: 'revicons';
 	src: url('../font/revicons.eot?5510888');
 	src: url('../font/revicons.eot?5510888#iefix') format('embedded-opentype'), url('../font/revicons.woff?5510888') format('woff'), url('../font/revicons.ttf?5510888') format('truetype'), url('../font/revicons.svg?5510888#revicons') format('svg');
 	font-weight: normal;
 	font-style: normal;
-}
+}*/
 .tp-hide-revslider {
 	visibility: hidden !important;
 	display: none !important;
@@ -1335,21 +1337,21 @@
 	-o-user-select: none;
 }
 .tp-bannershadow.tp-shadow1 {
-	background: url(../assets/shadow1.png) no-repeat;
+	background: url(../img/rs/shadow1.png) no-repeat;
 	background-size: 100% 100%;
 	width: 890px;
 	height: 60px;
 	bottom: -60px;
 }
 .tp-bannershadow.tp-shadow2 {
-	background: url(../assets/shadow2.png) no-repeat;
+	background: url(../img/rs/shadow2.png) no-repeat;
 	background-size: 100% 100%;
 	width: 890px;
 	height: 60px;
 	bottom: -60px;
 }
 .tp-bannershadow.tp-shadow3 {
-	background: url(../assets/shadow3.png) no-repeat;
+	background: url(../img/rs/shadow3.png) no-repeat;
 	background-size: 100% 100%;
 	width: 890px;
 	height: 60px;
@@ -1468,16 +1470,16 @@
 	z-index: 1;
 }
 .tp-dottedoverlay.twoxtwo {
-	background: url(../assets/gridtile.png);
+	background: url(../img/rs/gridtile.png);
 }
 .tp-dottedoverlay.twoxtwowhite {
-	background: url(../assets/gridtile_white.png);
+	background: url(../img/rs/gridtile_white.png);
 }
 .tp-dottedoverlay.threexthree {
-	background: url(../assets/gridtile_3x3.png);
+	background: url(../img/rs/gridtile_3x3.png);
 }
 .tp-dottedoverlay.threexthreewhite {
-	background: url(../assets/gridtile_3x3_white.png);
+	background: url(../img/rs/gridtile_3x3_white.png);
 }
 .tpclear {
 	clear: both;
@@ -1504,7 +1506,7 @@
 .tp-bullets.simplebullets.navbar {
 	border: 1px solid #666;
 	border-bottom: 1px solid #444;
-	background: url(../assets/boxed_bgtile.png);
+	background: url(../img/rs/boxed_bgtile.png);
 	height: 40px;
 	padding: 0px 10px;
 	-webkit-border-radius: 5px;
@@ -1513,7 +1515,7 @@
 	.bullet {
 		cursor: pointer;
 		position: relative;
-		background: url(../assets/bullet_boxed.png) no-Repeat top left;
+		background: url(../img/rs/bullet_boxed.png) no-Repeat top left;
 		width: 18px;
 		height: 19px;
 		margin-right: 5px;
@@ -1534,7 +1536,7 @@
 	}
 }
 .tp-bullets.simplebullets.navbar-old {
-	background: url(../assets/navigdots_bgtile.png);
+	background: url(../img/rs/navigdots_bgtile.png);
 	height: 35px;
 	padding: 0px 10px;
 	-webkit-border-radius: 5px;
@@ -1543,7 +1545,7 @@
 	.bullet {
 		cursor: pointer;
 		position: relative;
-		background: url(../assets/navigdots.png) no-Repeat bottom left;
+		background: url(../img/rs/navigdots.png) no-Repeat bottom left;
 		width: 15px;
 		height: 15px;
 		margin-left: 5px !important;
@@ -1562,7 +1564,7 @@
 	.bullet {
 		cursor: pointer;
 		position: relative;
-		background: url(../assets/bullet.png) no-Repeat top left;
+		background: url(../img/rs/bullet.png) no-Repeat top left;
 		width: 20px;
 		height: 20px;
 		margin-right: 0px;
@@ -1584,7 +1586,7 @@
 	.bullet {
 		cursor: pointer;
 		position: relative;
-		background: url(../assets/bullets.png) no-Repeat bottom left;
+		background: url(../img/rs/bullets.png) no-Repeat bottom left;
 		width: 23px;
 		height: 23px;
 		margin-right: 0px;
@@ -1599,7 +1601,7 @@
 	.bullet {
 		cursor: pointer;
 		position: relative;
-		background: url(../assets/bullets2.png) no-Repeat bottom left;
+		background: url(../img/rs/bullets2.png) no-Repeat bottom left;
 		width: 19px;
 		height: 19px;
 		margin-right: 0px;
@@ -1614,7 +1616,7 @@
 	.bullet {
 		cursor: pointer;
 		position: relative;
-		background: url(../assets/bullets2.png) no-Repeat bottom left;
+		background: url(../img/rs/bullets2.png) no-Repeat bottom left;
 		width: 19px;
 		height: 19px;
 		margin-right: 0px;
@@ -1660,7 +1662,7 @@
 	z-index: 100;
 	cursor: pointer;
 	position: relative;
-	background: url(../assets/large_left.png) no-Repeat top left;
+	background: url(../img/rs/large_left.png) no-Repeat top left;
 	width: 40px;
 	height: 40px;
 	&:hover {
@@ -1671,7 +1673,7 @@
 	z-index: 100;
 	cursor: pointer;
 	position: relative;
-	background: url(../assets/large_right.png) no-Repeat top left;
+	background: url(../img/rs/large_right.png) no-Repeat top left;
 	width: 40px;
 	height: 40px;
 	&:hover {
@@ -1682,7 +1684,7 @@
 	z-index: 100;
 	cursor: pointer;
 	position: relative;
-	background: url(../assets/small_left.png) no-Repeat top left;
+	background: url(../img/rs/small_left.png) no-Repeat top left;
 	width: 19px;
 	height: 14px;
 	margin-right: 0px;
@@ -1693,7 +1695,7 @@
 	z-index: 100;
 	cursor: pointer;
 	position: relative;
-	background: url(../assets/small_right.png) no-Repeat top left;
+	background: url(../img/rs/small_right.png) no-Repeat top left;
 	width: 19px;
 	height: 14px;
 	margin-right: 0px;
@@ -1704,7 +1706,7 @@
 	z-index: 100;
 	cursor: pointer;
 	position: relative;
-	background: url(../assets/arrow_left.png) no-Repeat top left;
+	background: url(../img/rs/arrow_left.png) no-Repeat top left;
 	width: 26px;
 	height: 26px;
 	margin-right: 0px;
@@ -1715,7 +1717,7 @@
 	z-index: 100;
 	cursor: pointer;
 	position: relative;
-	background: url(../assets/arrow_right.png) no-Repeat top left;
+	background: url(../img/rs/arrow_right.png) no-Repeat top left;
 	width: 26px;
 	height: 26px;
 	margin-right: 0px;
@@ -1726,7 +1728,7 @@
 	z-index: 100;
 	cursor: pointer;
 	position: relative;
-	background: url(../assets/small_left_boxed.png) no-Repeat top left;
+	background: url(../img/rs/small_left_boxed.png) no-Repeat top left;
 	width: 20px;
 	height: 15px;
 	float: left;
@@ -1737,7 +1739,7 @@
 	z-index: 100;
 	cursor: pointer;
 	position: relative;
-	background: url(../assets/small_right_boxed.png) no-Repeat top left;
+	background: url(../img/rs/small_right_boxed.png) no-Repeat top left;
 	width: 20px;
 	height: 15px;
 	float: left;
@@ -1748,7 +1750,7 @@
 	z-index: 100;
 	cursor: pointer;
 	position: relative;
-	background: url(../assets/arrowleft.png) no-Repeat top left;
+	background: url(../img/rs/arrowleft.png) no-Repeat top left;
 	width: 9px;
 	height: 16px;
 	float: left;
@@ -1759,7 +1761,7 @@
 	z-index: 100;
 	cursor: pointer;
 	position: relative;
-	background: url(../assets/arrowright.png) no-Repeat top left;
+	background: url(../img/rs/arrowright.png) no-Repeat top left;
 	width: 9px;
 	height: 16px;
 	float: left;
@@ -1776,7 +1778,7 @@
 	z-index: 100;
 	cursor: pointer;
 	position: relative;
-	background: url(../assets/arrow_left2.png) no-Repeat top left;
+	background: url(../img/rs/arrow_left2.png) no-Repeat top left;
 	width: 12px;
 	height: 17px;
 	float: left;
@@ -1787,7 +1789,7 @@
 	z-index: 100;
 	cursor: pointer;
 	position: relative;
-	background: url(../assets/arrow_right2.png) no-Repeat top left;
+	background: url(../img/rs/arrow_right2.png) no-Repeat top left;
 	width: 12px;
 	height: 17px;
 	float: left;
@@ -1798,7 +1800,7 @@
 	z-index: 100;
 	cursor: pointer;
 	position: relative;
-	background: url(../assets/arrow_left2.png) no-Repeat top left;
+	background: url(../img/rs/arrow_left2.png) no-Repeat top left;
 	width: 12px;
 	height: 17px;
 	float: left;
@@ -1809,7 +1811,7 @@
 	z-index: 100;
 	cursor: pointer;
 	position: relative;
-	background: url(../assets/arrow_right2.png) no-Repeat top left;
+	background: url(../img/rs/arrow_right2.png) no-Repeat top left;
 	width: 12px;
 	height: 17px;
 	float: left;
@@ -1820,7 +1822,7 @@
 	z-index: 100;
 	cursor: pointer;
 	position: relative;
-	background: url(../assets/large_left.png) no-Repeat 0 0;
+	background: url(../img/rs/large_left.png) no-Repeat 0 0;
 	width: 40px;
 	height: 40px;
 }
@@ -1828,7 +1830,7 @@
 	z-index: 100;
 	cursor: pointer;
 	position: relative;
-	background: url(../assets/large_right.png) no-Repeat 0 0;
+	background: url(../img/rs/large_right.png) no-Repeat 0 0;
 	width: 40px;
 	height: 40px;
 }
@@ -1888,7 +1890,7 @@
 .tp-bannertimer {
 	width: 100%;
 	height: 10px;
-	background: url(../assets/timer.png);
+	background: url(../img/rs/timer.png);
 	position: absolute;
 	z-index: 200;
 	top: 0px;
@@ -1903,7 +1905,7 @@
 		div {
 			width: 3000px;
 			height: 1500px;
-			background: url(../assets/coloredbg.png) repeat;
+			background: url(../img/rs/coloredbg.png) repeat;
 		}
 	}
 }
@@ -1912,7 +1914,7 @@
 		div {
 			width: 3000px;
 			height: 1500px;
-			background: url(../assets/coloredbg.png) repeat;
+			background: url(../img/rs/coloredbg.png) repeat;
 		}
 	}
 }
@@ -1925,7 +1927,7 @@
 .tp-loader.spinner0 {
 	width: 40px;
 	height: 40px;
-	background: url(../assets/loader.gif) no-repeat center center;
+	background: url(../img/rs/loader.gif) no-repeat center center;
 	background-color: #fff;
 	box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.15);
 	-webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.15);
@@ -1952,7 +1954,7 @@
 	-webkit-border-radius: 3px;
 }
 .tp-loader.spinner5 {
-	background: url(../assets/loader.gif) no-repeat 10px 10px;
+	background: url(../img/rs/loader.gif) no-repeat 10px 10px;
 	background-color: #fff;
 	margin: -22px -22px;
 	width: 44px;
@@ -2060,7 +2062,7 @@
 	}
 }
 .tp-transparentimg {
-	content: "url(../assets/transparent.png)";
+	content: "url(../img/rs/transparent.png)";
 }
 .tp-3d {
 	-webkit-transform-style: preserve-3d;
@@ -2083,23 +2085,21 @@
 		margin-left: .2em;
 	}
 }
-[class*=" {
-	revicon-"] {
-		&:before {
-			font-family: "revicons";
-			font-style: normal;
-			font-weight: normal;
-			speak: none;
-			display: inline-block;
-			text-decoration: inherit;
-			width: 1em;
-			margin-right: .2em;
-			text-align: center;
-			font-variant: normal;
-			text-transform: none;
-			line-height: 1em;
-			margin-left: .2em;
-		}
+[class*="revicon-"] {
+	&:before {
+		font-family: "revicons";
+		font-style: normal;
+		font-weight: normal;
+		speak: none;
+		display: inline-block;
+		text-decoration: inherit;
+		width: 1em;
+		margin-right: .2em;
+		text-align: center;
+		font-variant: normal;
+		text-transform: none;
+		line-height: 1em;
+		margin-left: .2em;
 	}
 }
 .revicon-search-1 {
