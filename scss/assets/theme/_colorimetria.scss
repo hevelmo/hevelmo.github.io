@@ -39,5 +39,9 @@
 @include patternbackgroundclass($pattern_data_image_dark, $pattern_dark_name, $bg_fondo_grey);
 @include patternbackgroundclass($pattern_data_image_white, $pattern_white_name, $bg_fondo_dark);
 // Gradient whit pattern
-@include gradientwithpattern($_direction_to_right, $gamma_slide_middle, $gradient_pattern_middle_name, $pattern-data-image-orange-smoke);
-@include gradientwithpattern($_direction_to_right, $gamma_slide_orange_smoke, $gradient_pattern_yellow_name, $pattern-data-image-orange-smoke);
+.gradient-slider {
+  background-size: auto !important;
+  background-repeat: repeat !important;
+  @include gradientwithpattern($_direction_to_right, $gamma_slide_orange_smoke, $gradient_pattern_yellow_name, $pattern-data-image-orange-smoke);
+  @include gradientwithpattern($_direction_to_right, $gamma_slide_middle, $gradient_pattern_middle_name, $pattern-data-image-orange-smoke);
+}

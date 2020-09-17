@@ -251,10 +251,10 @@
     }
     @mixin gradientwithpattern($direction, $list, $gamma, $pattern) {
         .#{$gamma} {
-            background: url($pattern), -webkit-linear-gradient($direction, $list);
-            background: url($pattern), -moz-linear-gradient($direction, $list);
-            background: url($pattern), -o-linear-gradient($direction, $list);
-            background: url($pattern), linear-gradient($direction, $list);
+            background-image: url($pattern), -webkit-linear-gradient($direction, $list) !important;
+            background-image: url($pattern), -moz-linear-gradient($direction, $list) !important;
+            background-image: url($pattern), -o-linear-gradient($direction, $list) !important;
+            background-image: url($pattern), linear-gradient($direction, $list) !important;
         }
     }
     // Pattern background

@@ -10028,11 +10028,15 @@ a {
   background-position: 0px 0px;
   background-repeat: repeat;
 }
-.gradient-pattern-middle-name {
-  background: url("../img/patterns/pattern-orange-smoke.svg"), linear-gradient(to right, rgba(190, 90, 30, 0.89) 0%, rgba(242, 229, 0, 0.89) 100%);
+.gradient-slider {
+  background-size: auto !important;
+  background-repeat: repeat !important;
 }
-.gradient-pattern-yellow-name {
-  background: url("../img/patterns/pattern-orange-smoke.svg"), linear-gradient(to right, rgba(250, 191, 18, 0.89) 0%, rgba(242, 229, 0, 0.89) 100%);
+.gradient-slider .gradient-pattern-yellow-name {
+  background-image: url("../img/patterns/pattern-orange-smoke.svg"), linear-gradient(to right, rgba(250, 191, 18, 0.89) 0%, rgba(242, 229, 0, 0.89) 100%) !important;
+}
+.gradient-slider .gradient-pattern-middle-name {
+  background-image: url("../img/patterns/pattern-orange-smoke.svg"), linear-gradient(to right, rgba(190, 90, 30, 0.89) 0%, rgba(242, 229, 0, 0.89) 100%) !important;
 }
 h1, .h1 {
   font-size: 41px;
