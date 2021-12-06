@@ -266,3 +266,293 @@ $jiophone2_vh : 320px;
         @content;
     }
 }
+
+// predefined breakpoints
+$maxvw1440px: 1440px;
+$maxvw1280px: 1280px;
+$maxvw1024px: 1024px;
+$maxvw960px: 960px;
+$maxvw900px: 900px;
+$maxvw800px: 800px;
+$maxvw768px: 768px;
+$maxvw640px: 640px;
+$maxvw600px: 600px;
+$maxvw540px: 540px;
+$maxvw480px: 480px;
+$maxvw414px: 414px;
+$maxvw412px: 412px;
+$maxvw411px: 411px;
+$maxvw384px: 384px;
+$maxvw375px: 375px;
+$maxvw360px: 360px;
+$maxvw320px: 320px;
+$maxvw280px: 280px;
+$maxvw240px: 240px;
+// @media screen and (max-width:1440px)
+@mixin maxvw1440px {
+    @media screen and (max-width:1440px ) {
+        @content;
+    }
+}
+// @media screen and (max-width:1280px)
+@mixin maxvw1280px {
+    @media screen and (max-width:1280px ) {
+        @content;
+    }
+}
+// @media screen and (max-width:1024px)
+@mixin maxvw1024px {
+    @media screen and (max-width:1024px ) {
+        @content;
+    }
+}
+// @media screen and (max-width:960px)
+@mixin maxvw960px {
+    @media screen and (max-width:960px ) {
+        @content;
+    }
+}
+// @media screen and (max-width:900px)
+@mixin maxvw900px {
+    @media screen and (max-width:900px ) {
+        @content;
+    }
+}
+// @media screen and (max-width:800px)
+@mixin maxvw800px {
+    @media screen and (max-width:800px ) {
+        @content;
+    }
+}
+// @media screen and (max-width:768px)
+@mixin maxvw768px {
+    @media screen and (max-width:768px ) {
+        @content;
+    }
+}
+// @media screen and (max-width:640px)
+@mixin maxvw640px {
+    @media screen and (max-width:640px ) {
+        @content;
+    }
+}
+// @media screen and (max-width:600px)
+@mixin maxvw600px {
+    @media screen and (max-width:600px ) {
+        @content;
+    }
+}
+// @media screen and (max-width:540px)
+@mixin maxvw540px {
+    @media screen and (max-width:540px ) {
+        @content;
+    }
+}
+// @media screen and (max-width:480px)
+@mixin maxvw480px {
+    @media screen and (max-width:480px ) {
+        @content;
+    }
+}
+// @media screen and (max-width:414px)
+@mixin maxvw414px {
+    @media screen and (max-width:414px ) {
+        @content;
+    }
+}
+// @media screen and (max-width:412px)
+@mixin maxvw412px {
+    @media screen and (max-width:412px ) {
+        @content;
+    }
+}
+// @media screen and (max-width:411px)
+@mixin maxvw411px {
+    @media screen and (max-width:411px ) {
+        @content;
+    }
+}
+// @media screen and (max-width:384px)
+@mixin maxvw384px {
+    @media screen and (max-width:384px ) {
+        @content;
+    }
+}
+// @media screen and (max-width:375px)
+@mixin maxvw375px {
+    @media screen and (max-width:375px ) {
+        @content;
+    }
+}
+// @media screen and (max-width:360px)
+@mixin maxvw360px {
+    @media screen and (max-width:360px ) {
+        @content;
+    }
+}
+// @media screen and (max-width:320px)
+@mixin maxvw320px {
+    @media screen and (max-width:320px ) {
+        @content;
+    }
+}
+// @media screen and (max-width:280px)
+@mixin maxvw280px {
+    @media screen and (max-width:280px ) {
+        @content;
+    }
+}
+// @media screen and (max-width:240px)
+@mixin maxvw240px {
+    @media screen and (max-width:240px ) {
+        @content;
+    }
+}
+@mixin deviceRetinaPixel2 {
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        @content;
+    }
+}
+@mixin flexGridCol_minvw980 {
+    @media (min-width: 980px) {
+        @content;
+    }
+}
+@mixin flexGridCol_OScreenMinVW661MaxVH979 {
+    @media only screen and (min-width: 661px) and (max-width: 979px) {
+        @content;
+    }
+}
+@mixin flexGridCol_OScreenMinVW0MaxVH660 {
+    @media only screen and (min-width: 0px) and (max-width: 660px) {
+        @content;
+    }
+}
+
+@include maxvw900px {
+    ._ocelot_ {
+        &:before {
+            font-family: "panton-bold-italic";
+            position: fixed;
+            right: 0;
+            top: 0;
+            background: #fff;
+            padding: 5px;
+            color: #000;
+            z-index: 10000000;
+            font-size: 10px;
+        }
+    }
+}
+@include maxvw900px {
+    ._ocelot_ {
+        &:before {
+            content: "mx-vw 900px";
+        }
+    }
+}
+@include maxvw800px {
+    ._ocelot_ {
+        &:before {
+            content: "mx-vw 800px";
+        }
+    }
+}
+@include maxvw768px {
+    ._ocelot_ {
+        &:before {
+            content: "mx-vw 768px";
+        }
+    }
+}
+@include maxvw640px {
+    ._ocelot_ {
+        &:before {
+            content: "mx-vw 640px";
+        }
+    }
+}
+@include maxvw600px {
+    ._ocelot_ {
+        &:before {
+            content: "mx-vw 600px";
+        }
+    }
+}
+@include maxvw540px {
+    ._ocelot_ {
+        &:before {
+            content: "mx-vw 540px";
+        }
+    }
+}
+@include maxvw480px {
+    ._ocelot_ {
+        &:before {
+            content: "mx-vw 480px";
+        }
+    }
+}
+@include maxvw414px {
+    ._ocelot_ {
+        &:before {
+            content: "mx-vw 414px";
+        }
+    }
+}
+@include maxvw412px {
+    ._ocelot_ {
+        &:before {
+            content: "mx-vw 412px";
+        }
+    }
+}
+@include maxvw411px {
+    ._ocelot_ {
+        &:before {
+            content: "mx-vw 411px";
+        }
+    }
+}
+@include maxvw384px {
+    ._ocelot_ {
+        &:before {
+            content: "mx-vw 384px";
+        }
+    }
+}
+@include maxvw375px {
+    ._ocelot_ {
+        &:before {
+            content: "mx-vw 375px";
+        }
+    }
+}
+@include maxvw360px {
+    ._ocelot_ {
+        &:before {
+            content: "mx-vw 360px";
+        }
+    }
+}
+@include maxvw320px {
+    ._ocelot_ {
+        &:before {
+            content: "mx-vw 320px";
+        }
+    }
+}
+@include maxvw280px {
+    ._ocelot_ {
+        &:before {
+            content: "mx-vw 280px";
+        }
+    }
+}
+@include maxvw240px {
+    ._ocelot_ {
+        &:before {
+            content: "mx-vw 240px";
+        }
+    }
+}
