@@ -17899,16 +17899,32 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: normal;
 }
+.panton-black {
+  font-family: "panton-black";
+}
+
 .panton-black-italic {
   font-family: "panton-black-italic";
+}
+
+.panton-bold {
+  font-family: "panton-bold";
 }
 
 .panton-bold-italic {
   font-family: "panton-bold-italic";
 }
 
+.panton-extra-black {
+  font-family: "panton-extra-black";
+}
+
 .panton-extra-black-italic {
   font-family: "panton-extra-black-italic";
+}
+
+.panton-extra-bold {
+  font-family: "panton-extra-bold";
 }
 
 .panton-extra-bold-italic {
@@ -17923,12 +17939,76 @@ readers do not read off random characters that represent icons */
   font-family: "panton-italic";
 }
 
+.panton-light {
+  font-family: "panton-light";
+}
+
 .panton-light-italic {
   font-family: "panton-light-italic";
 }
 
-.panton-semibold-italic {
-  font-family: "panton-semibold-italic";
+.panton-narrow-black {
+  font-family: "panton-narrow-black";
+}
+
+.panton-narrow-black-italic {
+  font-family: "panton-narrow-black-italic";
+}
+
+.panton-narrow-bold {
+  font-family: "panton-narrow-bold";
+}
+
+.panton-narrow-bold-italic {
+  font-family: "panton-narrow-bold-italic";
+}
+
+.panton-narrow-extra-bold {
+  font-family: "panton-narrow-extra-bold";
+}
+
+.panton-narrow-extra-bold-italic {
+  font-family: "panton-narrow-extra-bold-italic";
+}
+
+.panton-narrow-extra-light {
+  font-family: "panton-narrow-extra-light";
+}
+
+.panton-narrow-extra-light-italic {
+  font-family: "panton-narrow-extra-light-italic";
+}
+
+.panton-narrow-heavy {
+  font-family: "panton-narrow-heavy";
+}
+
+.panton-narrow-heavy-italic {
+  font-family: "panton-narrow-heavy-italic";
+}
+
+.panton-narrow-light {
+  font-family: "panton-narrow-light";
+}
+
+.panton-narrow-light-italic {
+  font-family: "panton-narrow-light-italic";
+}
+
+.panton-narrow-regular {
+  font-family: "panton-narrow-regular";
+}
+
+.panton-narrow-regular-italic {
+  font-family: "panton-narrow-regular-italic";
+}
+
+.panton-narrow-semi-bold-italic {
+  font-family: "panton-narrow-semi-bold-italic";
+}
+
+.panton-semi-bold {
+  font-family: "panton-semi-bold";
 }
 
 .panton-thin-italic {
