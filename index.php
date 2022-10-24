@@ -1,3 +1,6 @@
+<?php
+alert('Entra');
+?>
 <!DOCTYPE html>
 <html lang="wa" dir="ltr">
     <head>
