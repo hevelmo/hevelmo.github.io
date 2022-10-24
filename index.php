@@ -1,8 +1,8 @@
 <?php
-alert('Entra');
+print_r('Entra');
 ?>
 <!DOCTYPE html>
-<html lang="wa" dir="ltr">
+<html lang="es" dir="ltr">
     <head>
         <meta charset="utf-8">
         <title>hevelmo</title>
