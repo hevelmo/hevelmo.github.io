@@ -1,12 +1,12 @@
 @import "variables";
 
 @font-face {
-  font-family: '#{$icomoon-font-family}';
-  src:  url('../../#{$icomoon-font-path}/#{$icomoon-font-family}/#{$icomoon-font-family}.eot?gy29ns');
-  src:  url('../../#{$icomoon-font-path}/#{$icomoon-font-family}/#{$icomoon-font-family}.eot?gy29ns#iefix') format('embedded-opentype'),
-    url('../../#{$icomoon-font-path}/#{$icomoon-font-family}/#{$icomoon-font-family}.ttf?gy29ns') format('truetype'),
-    url('../../#{$icomoon-font-path}/#{$icomoon-font-family}/#{$icomoon-font-family}.woff?gy29ns') format('woff'),
-    url('../../#{$icomoon-font-path}/#{$icomoon-font-family}/#{$icomoon-font-family}.svg?gy29ns##{$icomoon-font-family}') format('svg');
+  font-family: '#{$font-family}';
+  src:  url('../../#{$font-path}/#{$font-family}/#{$font-family}.eot?gy29ns');
+  src:  url('../../#{$font-path}/#{$font-family}/#{$font-family}.eot?gy29ns#iefix') format('embedded-opentype'),
+    url('../../#{$font-path}/#{$font-family}/#{$font-family}.ttf?gy29ns') format('truetype'),
+    url('../../#{$font-path}/#{$font-family}/#{$font-family}.woff?gy29ns') format('woff'),
+    url('../../#{$font-path}/#{$font-family}/#{$font-family}.svg?gy29ns##{$font-family}') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -14,7 +14,7 @@
 
 [class^="poci-"], [class*=" poci-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: '#{$icomoon-font-family}' !important;
+  font-family: '#{$font-family}' !important;
   speak: never;
   font-style: normal;
   font-weight: normal;

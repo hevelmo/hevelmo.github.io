@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'Panton-ExtraBlackItalic';
+  src: url('Panton-ExtraBlackItalic.eot?#iefix') format('embedded-opentype'),  url('Panton-ExtraBlackItalic.otf')  format('opentype'),
+	     url('Panton-ExtraBlackItalic.woff') format('woff'), url('Panton-ExtraBlackItalic.ttf')  format('truetype'), url('Panton-ExtraBlackItalic.svg#Panton-ExtraBlackItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'Panton-SemiBoldItalic';
+  src: url('Panton-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),  url('Panton-SemiBoldItalic.otf')  format('opentype'),
+	     url('Panton-SemiBoldItalic.woff') format('woff'), url('Panton-SemiBoldItalic.ttf')  format('truetype'), url('Panton-SemiBoldItalic.svg#Panton-SemiBoldItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

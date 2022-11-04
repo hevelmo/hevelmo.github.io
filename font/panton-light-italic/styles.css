@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'Panton-LightItalic';
+  src: url('Panton-LightItalic.eot?#iefix') format('embedded-opentype'),  url('Panton-LightItalic.otf')  format('opentype'),
+	     url('Panton-LightItalic.woff') format('woff'), url('Panton-LightItalic.ttf')  format('truetype'), url('Panton-LightItalic.svg#Panton-LightItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
