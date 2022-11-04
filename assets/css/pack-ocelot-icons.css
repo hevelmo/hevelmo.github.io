@@ -1,7 +1,7 @@
 @font-face {
   font-family: "pack-ocelot-icons";
-  src: url("../fonts/pack-ocelot-icons.eot?gy29ns");
-  src: url("../fonts/pack-ocelot-icons.eot?gy29ns#iefix") format("embedded-opentype"), url("../fonts/pack-ocelot-icons.ttf?gy29ns") format("truetype"), url("../fonts/pack-ocelot-icons.woff?gy29ns") format("woff"), url("../fonts/pack-ocelot-icons.svg?gy29ns#pack-ocelot-icons") format("svg");
+  src: url("../../fonts/pack-ocelot-icons/pack-ocelot-icons.eot?gy29ns");
+  src: url("../../fonts/pack-ocelot-icons/pack-ocelot-icons.eot?gy29ns#iefix") format("embedded-opentype"), url("../../fonts/pack-ocelot-icons/pack-ocelot-icons.ttf?gy29ns") format("truetype"), url("../../fonts/pack-ocelot-icons/pack-ocelot-icons.woff?gy29ns") format("woff"), url("../../fonts/pack-ocelot-icons/pack-ocelot-icons.svg?gy29ns#pack-ocelot-icons") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
