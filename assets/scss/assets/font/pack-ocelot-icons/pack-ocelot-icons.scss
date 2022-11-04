@@ -1,0 +1,400 @@
+@import "variables";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?gy29ns');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?gy29ns#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?gy29ns') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?gy29ns') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?gy29ns##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="poci-"], [class*=" poci-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.poci-oci-categoria-audifono {
+  &:before {
+    content: $poci-oci-categoria-audifono; 
+  }
+}
+.poci-oci-categoria-enfriamiento {
+  &:before {
+    content: $poci-oci-categoria-enfriamiento; 
+  }
+}
+.poci-oci-categoria-fuentes {
+  &:before {
+    content: $poci-oci-categoria-fuentes; 
+  }
+}
+.poci-oci-categoria-gabinetes {
+  &:before {
+    content: $poci-oci-categoria-gabinetes; 
+  }
+}
+.poci-oci-categoria-monitores {
+  &:before {
+    content: $poci-oci-categoria-monitores; 
+  }
+}
+.poci-oci-categoria-mouse {
+  &:before {
+    content: $poci-oci-categoria-mouse; 
+  }
+}
+.poci-oci-categoria-silla {
+  &:before {
+    content: $poci-oci-categoria-silla; 
+  }
+}
+.poci-oci-categoria-software {
+  &:before {
+    content: $poci-oci-categoria-software; 
+  }
+}
+.poci-oci-categoria-streaming {
+  &:before {
+    content: $poci-oci-categoria-streaming; 
+  }
+}
+.poci-oci-categoria-teclado {
+  &:before {
+    content: $poci-oci-categoria-teclado; 
+  }
+}
+.poci-oci-editor-align-center {
+  &:before {
+    content: $poci-oci-editor-align-center; 
+  }
+}
+.poci-oci-editor-align-justify {
+  &:before {
+    content: $poci-oci-editor-align-justify; 
+  }
+}
+.poci-oci-editor-align-left {
+  &:before {
+    content: $poci-oci-editor-align-left; 
+  }
+}
+.poci-oci-editor-align-right {
+  &:before {
+    content: $poci-oci-editor-align-right; 
+  }
+}
+.poci-oci-editor-background-color {
+  &:before {
+    content: $poci-oci-editor-background-color; 
+  }
+}
+.poci-oci-editor-block-quote {
+  &:before {
+    content: $poci-oci-editor-block-quote; 
+  }
+}
+.poci-oci-editor-bold {
+  &:before {
+    content: $poci-oci-editor-bold; 
+  }
+}
+.poci-oci-editor-bullet-list {
+  &:before {
+    content: $poci-oci-editor-bullet-list; 
+  }
+}
+.poci-oci-editor-caracteres-especiales {
+  &:before {
+    content: $poci-oci-editor-caracteres-especiales; 
+  }
+}
+.poci-oci-editor-clear-formatting {
+  &:before {
+    content: $poci-oci-editor-clear-formatting; 
+  }
+}
+.poci-oci-editor-code {
+  &:before {
+    content: $poci-oci-editor-code; 
+  }
+}
+.poci-oci-editor-copy {
+  &:before {
+    content: $poci-oci-editor-copy; 
+  }
+}
+.poci-oci-editor-cut {
+  &:before {
+    content: $poci-oci-editor-cut; 
+  }
+}
+.poci-oci-editor-decrease-indent {
+  &:before {
+    content: $poci-oci-editor-decrease-indent; 
+  }
+}
+.poci-oci-editor-fontfamily {
+  &:before {
+    content: $poci-oci-editor-fontfamily; 
+  }
+}
+.poci-oci-editor-fontsize {
+  &:before {
+    content: $poci-oci-editor-fontsize; 
+  }
+}
+.poci-oci-editor-horizontal-line {
+  &:before {
+    content: $poci-oci-editor-horizontal-line; 
+  }
+}
+.poci-oci-editor-image {
+  &:before {
+    content: $poci-oci-editor-image; 
+  }
+}
+.poci-oci-editor-imprimir {
+  &:before {
+    content: $poci-oci-editor-imprimir; 
+  }
+}
+.poci-oci-editor-increase-indent {
+  &:before {
+    content: $poci-oci-editor-increase-indent; 
+  }
+}
+.poci-oci-editor-italic {
+  &:before {
+    content: $poci-oci-editor-italic; 
+  }
+}
+.poci-oci-editor-link {
+  &:before {
+    content: $poci-oci-editor-link; 
+  }
+}
+.poci-oci-editor-numered-list {
+  &:before {
+    content: $poci-oci-editor-numered-list; 
+  }
+}
+.poci-oci-editor-paragraph-format {
+  &:before {
+    content: $poci-oci-editor-paragraph-format; 
+  }
+}
+.poci-oci-editor-paste {
+  &:before {
+    content: $poci-oci-editor-paste; 
+  }
+}
+.poci-oci-editor-redo {
+  &:before {
+    content: $poci-oci-editor-redo; 
+  }
+}
+.poci-oci-editor-seleccionar-todo {
+  &:before {
+    content: $poci-oci-editor-seleccionar-todo; 
+  }
+}
+.poci-oci-editor-strikethrough {
+  &:before {
+    content: $poci-oci-editor-strikethrough; 
+  }
+}
+.poci-oci-editor-subscript {
+  &:before {
+    content: $poci-oci-editor-subscript; 
+  }
+}
+.poci-oci-editor-superscript {
+  &:before {
+    content: $poci-oci-editor-superscript; 
+  }
+}
+.poci-oci-editor-tabla {
+  &:before {
+    content: $poci-oci-editor-tabla; 
+  }
+}
+.poci-oci-editor-text-color {
+  &:before {
+    content: $poci-oci-editor-text-color; 
+  }
+}
+.poci-oci-editor-togglescreen {
+  &:before {
+    content: $poci-oci-editor-togglescreen; 
+  }
+}
+.poci-oci-editor-underline {
+  &:before {
+    content: $poci-oci-editor-underline; 
+  }
+}
+.poci-oci-editor-undo {
+  &:before {
+    content: $poci-oci-editor-undo; 
+  }
+}
+.poci-oci-input-image-upload {
+  &:before {
+    content: $poci-oci-input-image-upload; 
+  }
+}
+.poci-oci-preview-image-upload {
+  &:before {
+    content: $poci-oci-preview-image-upload; 
+  }
+}
+.poci-oci-chevron-down-fill {
+  &:before {
+    content: $poci-oci-chevron-down-fill; 
+  }
+}
+.poci-oci-chevron-left-fill {
+  &:before {
+    content: $poci-oci-chevron-left-fill; 
+  }
+}
+.poci-oci-chevron-right-fill {
+  &:before {
+    content: $poci-oci-chevron-right-fill; 
+  }
+}
+.poci-oci-chevron-up-fill {
+  &:before {
+    content: $poci-oci-chevron-up-fill; 
+  }
+}
+.poci-oci-icon-check-circle-fill {
+  &:before {
+    content: $poci-oci-icon-check-circle-fill; 
+  }
+}
+.poci-oci-icon-check-fill {
+  &:before {
+    content: $poci-oci-icon-check-fill; 
+  }
+}
+.poci-oci-icon-chevron-down-fill {
+  &:before {
+    content: $poci-oci-icon-chevron-down-fill; 
+  }
+}
+.poci-oci-icon-chevron-left-fill {
+  &:before {
+    content: $poci-oci-icon-chevron-left-fill; 
+  }
+}
+.poci-oci-icon-chevron-right-fill {
+  &:before {
+    content: $poci-oci-icon-chevron-right-fill; 
+  }
+}
+.poci-oci-icon-chevron-up-fill {
+  &:before {
+    content: $poci-oci-icon-chevron-up-fill; 
+  }
+}
+.poci-oci-icon-edit-fill {
+  &:before {
+    content: $poci-oci-icon-edit-fill; 
+  }
+}
+.poci-oci-icon-fantom-fill {
+  &:before {
+    content: $poci-oci-icon-fantom-fill; 
+  }
+}
+.poci-oci-icon-flag-fill {
+  &:before {
+    content: $poci-oci-icon-flag-fill; 
+  }
+}
+.poci-oci-icon-hand-down-fill {
+  &:before {
+    content: $poci-oci-icon-hand-down-fill; 
+  }
+}
+.poci-oci-icon-hand-up-fill {
+  &:before {
+    content: $poci-oci-icon-hand-up-fill; 
+  }
+}
+.poci-oci-icon-image-fill {
+  &:before {
+    content: $poci-oci-icon-image-fill; 
+  }
+}
+.poci-oci-icon-link-fill {
+  &:before {
+    content: $poci-oci-icon-link-fill; 
+  }
+}
+.poci-oci-icon-lupe-fill {
+  &:before {
+    content: $poci-oci-icon-lupe-fill; 
+  }
+}
+.poci-oci-icon-mail-fill {
+  &:before {
+    content: $poci-oci-icon-mail-fill; 
+  }
+}
+.poci-oci-icon-map-marker-fill {
+  &:before {
+    content: $poci-oci-icon-map-marker-fill; 
+  }
+}
+.poci-oci-icon-ocelot-fill {
+  &:before {
+    content: $poci-oci-icon-ocelot-fill; 
+  }
+}
+.poci-oci-icon-ocelot-small-fill {
+  &:before {
+    content: $poci-oci-icon-ocelot-small-fill; 
+  }
+}
+.poci-oci-icon-phone-fill {
+  &:before {
+    content: $poci-oci-icon-phone-fill; 
+  }
+}
+.poci-oci-icon-post-fill {
+  &:before {
+    content: $poci-oci-icon-post-fill; 
+  }
+}
+.poci-oci-icon-puzzle-fill {
+  &:before {
+    content: $poci-oci-icon-puzzle-fill; 
+  }
+}
+.poci-oci-icon-question-circle-fill {
+  &:before {
+    content: $poci-oci-icon-question-circle-fill; 
+  }
+}
+.poci-oci-icon-times-circle-fill {
+  &:before {
+    content: $poci-oci-icon-times-circle-fill; 
+  }
+}
+
