@@ -2,6 +2,47 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
   }
+
+/* Estilos para encabezados */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para imágenes */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Imagenes retina */
+@media (-webkit-min-device-pixel-ratio: 2),
+       (min-resolution: 192dpi) {
+  img[srcset] {
+    background-image: none !important;
+    -webkit-background-size: contain !important;
+    -moz-background-size: contain !important;
+    -o-background-size: contain !important;
+    background-size: contain !important;
+  }
+  img[srcset]:after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 100%;
+    margin-left: -1px;
+    float: left;
+  }
+  img[srcset] > * {
+    max-height: 100%;
+  }
+  img[srcset] > * > img {
+    height: auto;
+    max-width: none;
+  }
+}
+
   
   header {
     background-color: #333;
