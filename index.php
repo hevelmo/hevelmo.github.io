@@ -40,7 +40,7 @@
         <label for="message">Mensaje:</label>
         <textarea id="message" name="message" required></textarea>
 
-        <button type="submit">Enviar</button>
+        <button type="submit">Enviarrrr</button>
       </form>
     </section>
   </main>
