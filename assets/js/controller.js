@@ -7,17 +7,16 @@ export const ROUTERS = {
 };
 // En controller.js
 export function handleRouteChange() {
-    const { pathname } = window.location;
-  
-    switch (pathname) {
-      case ROUTES.ABOUT:
-        renderAbout();
-        break;
-      case ROUTES.CONTACT:
-        renderContact();
-        break;
-      default:
-        renderHome();
-    }
+  const { pathname } = window.location;
+
+  switch (pathname) {
+    case ROUTES.ABOUT:
+      renderAbout();
+      break;
+    case ROUTES.CONTACT:
+      renderContact();
+      break;
+    default:
+      renderHome();
   }
-  
+}
