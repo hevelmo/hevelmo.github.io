@@ -5,7 +5,7 @@ const sobreMiControlador = {
     },
   
     cargarSobreMi: function() {
-      fetch('sobre-mi.json')
+      fetch('assets/data/sobre-mi.json')
         .then(response => response.json())
         .then(data => {
           sobreMiModelo.titulo = data.titulo;
