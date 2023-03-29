@@ -1,4 +1,8 @@
-const modeloSobreMi = {
-    descripcion: 'Soy un desarrollador web apasionado por la tecnología y la innovación. Me especializo en el desarrollo de sitios web con HTML, CSS y JavaScript.',
-    habilidades: ['HTML', 'CSS', 'JavaScript', 'React', 'Node.js']
-  };
+let modeloSobreMi = {};
+
+async function cargarDatosSobreMi() {
+  const response = await fetch('assets/data/sobre-mi.json');
+  const data = await response.json();
+  modeloSobreMi = data;
+  controladorSobreMi();
+}

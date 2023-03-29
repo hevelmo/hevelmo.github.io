@@ -1,0 +1,53 @@
+{
+    "nombre": "Heriberto Velasco Mora",
+    "edad": 39,
+    "descripcion": "
+    Soy un desarrollador web apasionado por la tecnología y la creación de sitios web hermosos 
+    y funcionales. Me especializo en HTML, CSS y JavaScript, y también tengo experiencia en el 
+    uso de bibliotecas y frameworks populares como React y Vue. Siempre estoy aprendiendo y 
+    experimentando con nuevas tecnologías para mejorar mis habilidades y conocimientos.",
+    "experiencia": [
+      {
+        "puesto": "Desarrollador Frontend",
+        "empresa": "Acme Inc.",
+        "periodo": "2019 - Presente",
+        "descripcion": "Desarrollo y mantenimiento de sitios web para clientes de la empresa, utilizando tecnologías como HTML, CSS, JavaScript y React. Trabajo en equipo con diseñadores y desarrolladores backend para lograr resultados de alta calidad."
+      },
+      {
+        "puesto": "Desarrollador Web",
+        "empresa": "Xyz Corp.",
+        "periodo": "2017 - 2019",
+        "descripcion": "Desarrollo de sitios web personalizados para clientes utilizando HTML, CSS, JavaScript y PHP. Colaboré con diseñadores para crear diseños personalizados y con el equipo de control de calidad para asegurar que los sitios web cumplan con los estándares de calidad."
+      }
+    ],
+    "habilidades": [
+      {
+        "nombre": "HTML",
+        "nivel": 5
+      },
+      {
+        "nombre": "CSS",
+        "nivel": 4
+      },
+      {
+        "nombre": "JavaScript",
+        "nivel": 4
+      },
+      {
+        "nombre": "React",
+        "nivel": 3
+      },
+      {
+        "nombre": "Vue",
+        "nivel": 2
+      }
+    ],
+    "educacion": [
+      {
+        "institucion": "Universidad Nacional",
+        "titulo": "Licenciatura en Ciencias de la Computación",
+        "periodo": "2013 - 2017"
+      }
+    ]
+  }
+  
