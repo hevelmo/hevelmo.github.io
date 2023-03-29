@@ -79,6 +79,16 @@ ul {
   list-style: none;
 }
 
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  margin: 0 auto;
+  text-decoration: none;
+}
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
