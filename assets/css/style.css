@@ -143,7 +143,7 @@ img {
 }
 
 /* Estilos para los enlaces de la navegación */
-header nav a {
+header nav a.active {
   color: #fff;
   text-decoration: none;
   margin-left: 1rem;
@@ -151,7 +151,7 @@ header nav a {
 }
 
 /* Estilo para la línea que aparecerá debajo del enlace de navegación */
-header nav a::after {
+header nav a.active::after {
   content: '';
   display: block;
   height: 2px;
