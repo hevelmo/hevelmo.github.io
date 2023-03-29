@@ -1,0 +1,48 @@
+{
+    // enable/disable compile on save
+    // default is true
+    "webAssetsCompiler.compileOnSave": true,
+    // export format list
+    "webAssetsCompiler.exportFormats": [
+        {
+            // export style, expanded/compressed
+            "format": "expanded",
+            // output file extension (without dot)
+            "extension": "",
+            // enable/disable export source mapping
+            // default is false
+            "sourceMap": false
+        }
+    ],
+    // list of watching folders
+    "webAssetsCompiler.targetFolders" : [
+        
+        {
+            // watching folder, relative path from work folder
+            "input": "",
+            // output folder, relative path from work folder
+            "output": "",
+            // watching all sub folder or not
+            // default is true
+            "includeSubFolder": true,
+            // file name regex of include list
+            // include all files if this value isn't set
+            "includePattern": "",
+            // file name regex of exclude list
+            // no file is excluded if this value isn't set
+            "excludePattern": "",
+            // type of input file, SASS/SCSS
+            // file extension will be used to check language name if this value isn't set
+            "languageName": "",
+            // same as `webAssetsCompiler.exportFormats`
+            // `webAssetsCompiler.exportFormats` will be used if this value isn't set
+            "formats": [
+                {
+                    "format": "expanded",
+                    "extension": "",
+                    "sourceMap": false
+                }
+            ],
+        }
+    ]
+}
