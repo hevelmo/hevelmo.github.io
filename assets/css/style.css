@@ -246,12 +246,12 @@ nav a::before {
   background-color: #333;
   transform: scaleX(0); /* establece el ancho inicial en cero */
   transform-origin: left; /* establece el punto de origen en la izquierda */
-  transition: transform 0.3s ease-in-out; /* transición suave */
+  transition: transform 0.5s ease-in-out; /* transición suave */
 }
 
 /* Anima la línea inferior cuando se pasa el cursor por encima del enlace */
 nav a:hover::before {
-  transform: scaleX(1); /* establece el ancho en 100% */
+  transform: scaleX(0.5); /* establece el ancho en 100% */
   transform-origin: right; /* cambia el punto de origen a la derecha */
 }
 
