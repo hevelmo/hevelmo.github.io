@@ -1,3 +1,13 @@
+// Vista de navegación
+const navigationView = {
+    setActiveLink: function(link) {
+      const activeLink = document.querySelector('header nav a.active');
+      if (activeLink) {
+        activeLink.classList.remove('active');
+      }
+      link.classList.add('active');
+    }
+};
 // Controlador de navegación
 const navController = {
     init: function() {
@@ -9,12 +19,13 @@ const navController = {
         link.addEventListener('click', e => {
           e.preventDefault(); // Prevenir comportamiento por defecto
           const target = e.target.getAttribute('href'); // Obtener el identificador de la sección
+          navigationView.setActiveLink(link);
           sectionController.show(target); // Mostrar la sección correspondiente
         });
       });
     }
   };
-  
+    
   // Controlador de secciones
   const sectionController = {
     init: function() {
