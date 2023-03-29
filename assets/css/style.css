@@ -398,3 +398,96 @@ header nav a.active::after,
 header nav a:hover::after {
   width: 100%;
 }
+
+/* Estilos para la sección Sobre mí */
+
+#sobre-mi {
+  background-color: #f9f9f9;
+  padding: 60px 0;
+}
+
+.sobre-mi-contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sobre-mi-titulo {
+  text-align: center;
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.sobre-mi-contenido {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.sobre-mi-foto-contenedor {
+  flex: 0 0 300px;
+  margin-right: 40px;
+}
+
+.sobre-mi-foto {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.sobre-mi-descripcion {
+  flex: 1 1 60%;
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 40px;
+  text-align: justify;
+}
+
+.sobre-mi-habilidades {
+  flex: 1 1 30%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.sobre-mi-habilidad-nombre {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.sobre-mi-habilidad-nivel {
+  width: 100%;
+  height: 20px;
+  position: relative;
+}
+
+.sobre-mi-habilidad-nivel-fondo {
+  width: 100%;
+  height: 100%;
+  background-color: #ddd;
+  border-radius: 10px;
+}
+
+.sobre-mi-habilidad-nivel-valor {
+  height: 100%;
+  background-color: #4CAF50;
+  border-radius: 10px;
+}
+
+.sobre-mi-habilidad-nivel-porcentaje {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  font-size: 14px;
+  color: #333;
+  width: 100%;
+  text-align: center;
+}
