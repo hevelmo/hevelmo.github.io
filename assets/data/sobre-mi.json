@@ -1,7 +1,11 @@
 {
     "nombre": "Heriberto Velasco Mora",
     "edad": 39,
-    "descripcion": "Soy un desarrollador web apasionado por la tecnología y la creación de sitios web hermosos y funcionales. Me especializo en HTML, CSS y JavaScript, y también tengo experiencia en el uso de bibliotecas y frameworks populares como React y Vue. Siempre estoy aprendiendo y experimentando con nuevas tecnologías para mejorar mis habilidades y conocimientos.",
+    "descripcion": "
+    Soy un desarrollador web apasionado por la tecnología y la creación de sitios web hermosos 
+    y funcionales. Me especializo en HTML, CSS y JavaScript, y también tengo experiencia en el 
+    uso de bibliotecas y frameworks populares como React y Vue. Siempre estoy aprendiendo y 
+    experimentando con nuevas tecnologías para mejorar mis habilidades y conocimientos.",
     "experiencia": [
       {
         "puesto": "Desarrollador Frontend",
