@@ -141,3 +141,30 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+/* Estilos para los enlaces de la navegación */
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1rem;
+  position: relative; /* Agregamos posicionamiento relativo para poder animar */
+}
+
+/* Estilo para la línea que aparecerá debajo del enlace de navegación */
+header nav a::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 0;
+  background-color: #fff;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  transition: width 0.3s ease-in-out; /* Agregamos una transición suave a la propiedad "width" */
+}
+
+/* Estilo para animar la línea debajo del enlace de navegación al hacer clic */
+header nav a.active::after,
+header nav a:hover::after {
+  width: 100%;
+}
