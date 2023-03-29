@@ -24,7 +24,11 @@
             <p>Descripción: <span id="descripcion"></span></p>-->
             <section id="sobre-mi">
               <!-- Vista de la sección Sobre mí -->
-              <h1>Sobre mí</h1>
+              <div class="container">
+                <h2>Sobre mí</h2>
+                <p class="descripcion"></p>
+                <ul class="habilidades"></ul>
+              </div>
             </section>
         
             <section id="portafolio">
@@ -48,5 +52,8 @@
         <script src="assets/js/models.js"></script>
         <script src="assets/js/views.js"></script>
         <script src="assets/js/controllers.js"></script>
+        <script>
+            controladorSobreMi();
+        </script>
     </body>
 </html>
