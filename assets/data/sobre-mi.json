@@ -1,7 +1,7 @@
 {
     "titulo": "Heriberto Velasco Mora",
     "descripcion": "Soy un desarrollador web apasionado por la creación de aplicaciones y sitios web que resuelvan problemas del mundo real. Me especializo en tecnologías web como HTML5, CSS3, JavaScript y PHP. También tengo experiencia en la creación de aplicaciones móviles híbridas utilizando frameworks como Ionic y React Native.",
-    "foto": "asets/img/foto.jpg",
+    "foto": "assets/img/profile/main_photo.jpg",
     "habilidades": [
       {
         "nombre": "HTML5",
