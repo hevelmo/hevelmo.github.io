@@ -48,3 +48,20 @@ const blogControlador = {
       });
   }
 };  
+const contactControlador = {
+  init: function() {
+    contactoVista.init();
+    this.cargarContacto();
+  },
+
+  cargarContacto: function() {
+    fetch('assets/data/contacto.json')
+      .then(response => response.json())
+      .then(data => {
+        contactoModelo.email = data.email;
+        contactoModelo.whatsapp = data.whatsapp;
+        contactoModelo.phone = data.phone;
+        contactoVista.actualizar(contactoModelo);
+      });
+  }
+};  

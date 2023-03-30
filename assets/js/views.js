@@ -76,3 +76,23 @@ const blogVista = {
     });
   }
 };
+
+const contactoVista = {
+  init: function() {
+    this.contactOptions = document.querySelector('.contact-options-content');
+  },
+
+  actualizar: function(modelo) {
+    this.contactOptions.innerHTML = '';
+    modelo.opciones.forEach(opcion => {
+      const opcionesElemento = document.createElement('div');
+      opcionesElemento.classList.add('contact-opciones');
+      opcionesElemento.innerHTML = `
+        <a href="mailto:${contactInfo.email}" id="contact-email">Contáctame por correo electrónico</a>
+        <a href="https://wa.me/${contactInfo.whatsapp}" target="_blank" id="contact-whatsapp">Contáctame por WhatsApp</a>
+        <a href="tel:${contactInfo.phone}" id="contact-phone">Contáctame por teléfono</a>
+      `;
+      this.contactOptions.appendChild(opcionesElemento);
+    });
+  }
+}
