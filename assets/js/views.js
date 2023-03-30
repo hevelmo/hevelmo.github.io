@@ -37,7 +37,7 @@ const portafolioVista = {
   actualizar: function(modelo) {
     this.portafolioTitulo.textContent = modelo.titulo;
     this.portafolioProyecto.innerHTML = '';
-    modelo.portafolio.forEach(proyecto => {
+    modelo.proyectos.forEach(proyecto => {
       const portafolioElemento = document.createElement('div');
       portafolioElemento.classList.add('portafolio-proyecto;');
       portafolioElemento.innerHTML = `
