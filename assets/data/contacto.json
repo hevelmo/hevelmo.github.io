@@ -1,6 +1,5 @@
 {
-    "telefono": "+1234567890",
-    "email": "info@example.com",
-    "whatsapp": "https://wa.me/1234567890"
-  }
-  
+    "email": "ejemplo@ejemplo.com",
+    "whatsapp": "123456789",
+    "phone": "555-123-4567"
+}  
