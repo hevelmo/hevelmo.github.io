@@ -88,9 +88,9 @@ const contactoVista = {
       const opcionesElemento = document.createElement('div');
       opcionesElemento.classList.add('contact-opciones');
       opcionesElemento.innerHTML = `
-        <a href="mailto:${contactInfo.email}" id="contact-email">Contáctame por correo electrónico</a>
-        <a href="https://wa.me/${contactInfo.whatsapp}" target="_blank" id="contact-whatsapp">Contáctame por WhatsApp</a>
-        <a href="tel:${contactInfo.phone}" id="contact-phone">Contáctame por teléfono</a>
+        <a href="mailto:${opcion.email}" id="contact-email">Contáctame por correo electrónico</a>
+        <a href="https://wa.me/${opcion.whatsapp}" target="_blank" id="contact-whatsapp">Contáctame por WhatsApp</a>
+        <a href="tel:${opcion.phone}" id="contact-phone">Contáctame por teléfono</a>
       `;
       this.contactOptions.appendChild(opcionesElemento);
     });
