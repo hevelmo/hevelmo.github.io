@@ -545,3 +545,94 @@ header nav a:hover::after {
 .portafolio-proyecto-enlace:hover {
   background-color: #555;
 }
+
+#contacto {
+  background-color: #f5f5f5;
+  padding: 50px;
+  text-align: center;
+}
+
+#contacto h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+#contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#contact-form label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#contact-form textarea {
+  height: 200px;
+}
+
+#contact-form button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+  background-color: #3e8e41;
+}
+
+#contact-direct {
+  margin-top: 50px;
+}
+
+#contact-direct h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#contact-direct ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+#contact-direct li {
+  margin: 0 10px;
+}
+
+#contact-direct a {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#contact-direct a:hover {
+  color: #4CAF50;
+}
+
+#contact-direct .fa {
+  margin-right: 10px;
+  font-size: 24px;
+}
