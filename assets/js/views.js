@@ -54,7 +54,7 @@ const portafolioVista = {
 const blogVista = {
   init: function() {
     this.blogTitulo = document.querySelector('.blog-titulo');
-    this.blogArticulos = document.querySelector('.blog-articulos');
+    this.blogArticulos = document.querySelector('.blog-articulos-contenedor');
   },
 
   actualizar: function(modelo) {
