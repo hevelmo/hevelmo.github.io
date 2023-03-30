@@ -1,0 +1,21 @@
+[
+    {
+      "name": "John Doe",
+      "email": "johndoe@example.com",
+      "message": "Hello, I would like to inquire about your services.",
+      "timestamp": "2022-04-01T10:30:00.000Z"
+    },
+    {
+      "name": "Jane Smith",
+      "email": "janesmith@example.com",
+      "message": "Hi, I have a question about your product.",
+      "timestamp": "2022-04-02T15:20:00.000Z"
+    },
+    {
+      "name": "Bob Johnson",
+      "email": "bobjohnson@example.com",
+      "message": "Hey, I was wondering if you offer any discounts.",
+      "timestamp": "2022-04-03T08:45:00.000Z"
+    }
+  ]
+  
