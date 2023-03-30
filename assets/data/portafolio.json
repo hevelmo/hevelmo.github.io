@@ -1,0 +1,24 @@
+{
+    "titulo": "Mi Portafolio",
+    "proyectos": [
+      {
+        "titulo": "Proyecto 1",
+        "descripcion": "Descripción del proyecto 1",
+        "imagen": "img/proyecto1.jpg",
+        "enlace": "https://www.proyecto1.com"
+      },
+      {
+        "titulo": "Proyecto 2",
+        "descripcion": "Descripción del proyecto 2",
+        "imagen": "img/proyecto2.jpg",
+        "enlace": "https://www.proyecto2.com"
+      },
+      {
+        "titulo": "Proyecto 3",
+        "descripcion": "Descripción del proyecto 3",
+        "imagen": "img/proyecto3.jpg",
+        "enlace": "https://www.proyecto3.com"
+      }
+    ]
+  }
+  

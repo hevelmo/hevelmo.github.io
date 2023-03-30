@@ -491,3 +491,57 @@ header nav a:hover::after {
   width: 100%;
   text-align: center;
 }
+/* Estilos para la sección de portafolio */
+
+.portafolio-contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.portafolio-titulo {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.portafolio-proyectos-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.portafolio-proyecto {
+  max-width: 400px;
+  margin: 30px;
+  text-align: center;
+}
+
+.portafolio-proyecto-imagen {
+  max-width: 100%;
+  height: auto;
+}
+
+.portafolio-proyecto-titulo {
+  font-size: 1.5rem;
+  margin: 20px 0;
+}
+
+.portafolio-proyecto-descripcion {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.portafolio-proyecto-enlace {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.portafolio-proyecto-enlace:hover {
+  background-color: #555;
+}

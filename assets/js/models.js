@@ -4,3 +4,7 @@ const sobreMiModelo = {
     foto: '',
     habilidades: []
 };
+const portafolioModelo = {
+    titulo: '',
+    proyectos: []
+};
