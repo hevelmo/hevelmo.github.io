@@ -32,3 +32,19 @@ const portafolioControlador = {
       });
   }
 };  
+const blogControlador = {
+  init: function() {
+    blogVista.init();
+    this.cargarBlog();
+  },
+
+  cargarBlog: function() {
+    fetch('assets/data/blog.json')
+      .then(response => response.json())
+      .then(data => {
+        blogModelo.titulo = data.titulo;
+        blogModelo.articulos = data.articulos;
+        blogVista.actualizar(blogModelo);
+      });
+  }
+};  

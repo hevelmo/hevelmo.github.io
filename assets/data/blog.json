@@ -1,0 +1,30 @@
+{
+    "titulo": "Desarrollo web",
+    "articulos": [
+      {
+        "titulo": "Título del artículo 1",
+        "fecha": "01/01/2022",
+        "autor": "Autor del artículo 1",
+        "imagen": "img/articulo1.jpg",
+        "contenido": "Contenido del artículo 1",
+        "enlace": "https://www.articulo1.com"
+      },
+      {
+        "titulo": "Título del artículo 2",
+        "fecha": "02/01/2022",
+        "autor": "Autor del artículo 2",
+        "imagen": "img/articulo2.jpg",
+        "contenido": "Contenido del artículo 2",
+        "enlace": "https://www.articulo2.com"
+      },
+      {
+        "titulo": "Título del artículo 3",
+        "fecha": "03/01/2022",
+        "autor": "Autor del artículo 3",
+        "imagen": "img/articulo3.jpg",
+        "contenido": "Contenido del artículo 3",
+        "enlace": "https://www.articulo3.com"
+      }
+    ]
+  }
+  

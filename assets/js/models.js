@@ -8,3 +8,7 @@ const portafolioModelo = {
     titulo: '',
     proyectos: []
 };
+const blogModelo = {
+    titulo: '',
+    articulos: []
+};

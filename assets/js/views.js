@@ -50,3 +50,29 @@ const portafolioVista = {
     });
   }
 };
+
+const blogVista = {
+  init: function() {
+    this.blogTitulo = document.querySelector('.blog-titulo');
+    this.blogArticulos = document.querySelector('.blog-articulos');
+  },
+
+  actualizar: function(modelo) {
+    this.blogTitulo.textContent = modelo.titulo;
+    this.blogArticulos.innerHTML = '';
+    modelo.articulos.forEach(articulo => {
+      const articuloElemento = document.createElement('div');
+      articuloElemento.classList.add('blog-articulos;');
+      articuloElemento.innerHTML = `
+        <div class="blog-articulo">
+          <img class="blog-articulo-imagen" src="${articulo.imagen}" alt="${articulo.titulo}">
+          <h3 class="blog-articulo-titulo">${articulo.titulo}</h3>
+          <p class="blog-articulo-autor-fecha">${articulo.autor} - ${articulo.fecha}</p>
+          <p class="blog-articulo-contenido">${articulo.contenido}</p>
+          <a class="blog-articulo-enlace" href="${articulo.enlace}" target="_blank">Leer más</a>
+        </div>
+      `;
+      this.blogArticulos.appendChild(articuloElemento);
+    });
+  }
+};
