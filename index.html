@@ -18,12 +18,7 @@
             </nav>
         </header>
         <main>
-            <!--<h1>Sobre mí</h1>
-            <p>Nombre: <span id="nombre"></span></p>
-            <p>Edad: <span id="edad"></span></p>
-            <p>Descripción: <span id="descripcion"></span></p>-->
             <section id="sobre-mi">
-                <!-- Vista de la sección Sobre mí -->
                 <h1>Sobre mí</h1>
                 <div class="sobre-mi-contenedor">
                     <h3 class="sobre-mi-titulo"></h3>
@@ -44,7 +39,7 @@
                     <h2 class="portafolio-titulo"></h2>
                     <div class="portafolio-proyectos-contenedor">
                         <div class="portafolio-proyecto">
-                            <img class="portafolio-proyecto-imagen" src="" alt="${proyecto.titulo}">
+                            <img class="portafolio-proyecto-imagen" src="" alt="">
                             <h3 class="portafolio-proyecto-titulo"></h3>
                             <p class="portafolio-proyecto-descripcion"></p>
                             <a class="portafolio-proyecto-enlace" href="" target="_blank">Ver proyecto</a>
@@ -59,7 +54,13 @@
                 <div class="blog-contenedor">
                     <h2 class="blog-titulo"></h2>
                     <div class="blog-articulos-contenedor">
-                      <!-- Aquí se insertarán los artículos del blog dinámicamente -->
+                        <div class="blog-articulo">
+                            <img class="blog-articulo-imagen" src="" alt="">
+                            <h3 class="blog-articulo-titulo"></h3>
+                            <p class="blog-articulo-autor-fecha"></p>
+                            <p class="blog-articulo-contenido"></p>
+                            <a class="blog-articulo-enlace" href="" target="_blank">Ver articulo</a>
+                          </div>
                     </div>
                 </div>
             </section>
@@ -79,7 +80,6 @@
               
         </main>
         
-        <!--<script src="assets/app/app.js"></script>-->
         <script src="assets/js/main.js"></script>
         <script src="assets/js/models.js"></script>
         <script src="assets/js/views.js"></script>
