@@ -1,5 +1,9 @@
 {
-    "email": "ejemplo@ejemplo.com",
-    "whatsapp": "123456789",
-    "phone": "555-123-4567"
+    "opciones": [
+        {
+            "email": "ejemplo@ejemplo.com",
+            "whatsapp": "123456789",
+            "phone": "555-123-4567"
+        }
+    ]
 }  

@@ -48,7 +48,8 @@ const blogControlador = {
       });
   }
 };  
-const contactControlador = {
+
+const contactoControlador = {
   init: function() {
     contactoVista.init();
     this.cargarContacto();
