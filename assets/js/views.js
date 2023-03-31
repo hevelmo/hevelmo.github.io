@@ -39,7 +39,7 @@ const portafolioVista = {
     this.portafolioProyecto.innerHTML = '';
     modelo.proyectos.forEach(proyecto => {
       const portafolioElemento = document.createElement('div');
-      portafolioElemento.classList.add('portafolio-proyecto;');
+      portafolioElemento.classList.add('portafolio-proyecto');
       portafolioElemento.innerHTML = `
         <img class="portafolio-proyecto-imagen" src="${proyecto.imagen}" alt="${proyecto.titulo}">
         <h3 class="portafolio-proyecto-titulo">${proyecto.titulo}</h3>
@@ -62,7 +62,7 @@ const blogVista = {
     this.blogArticulos.innerHTML = '';
     modelo.articulos.forEach(articulo => {
       const articuloElemento = document.createElement('div');
-      articuloElemento.classList.add('blog-articulos;');
+      articuloElemento.classList.add('blog-articulos');
       articuloElemento.innerHTML = `
         <div class="blog-articulo">
           <img class="blog-articulo-imagen" src="${articulo.imagen}" alt="${articulo.titulo}">
@@ -83,14 +83,16 @@ const contactoVista = {
   },
 
   actualizar: function(modelo) {
-    //this.contactOptions.innerHTML = '';
-    modelo.opciones.forEach(opcion => {
+    this.contactOptions.innerHTML = '';
+    modelo.articulos.forEach(opciones => {
       const opcionesElemento = document.createElement('div');
       opcionesElemento.classList.add('contacto-opciones');
       opcionesElemento.innerHTML = `
-        <a href="mailto:${opcion.email}" id="contact-email">Contáctame por correo electrónico</a>
-        <a href="https://wa.me/${opcion.whatsapp}" target="_blank" id="contact-whatsapp">Contáctame por WhatsApp</a>
-        <a href="tel:${opcion.phone}" id="contact-phone">Contáctame por teléfono</a>
+        <div class="contacto-opciones">
+          <a href="mailto:${opcion.email}" id="contact-email">Contáctame por correo electrónico</a>
+          <a href="https://wa.me/${opcion.whatsapp}" target="_blank" id="contact-whatsapp">Contáctame por WhatsApp</a>
+          <a href="tel:${opcion.phone}" id="contact-phone">Contáctame por teléfono</a>
+        </div>
       `;
       this.contactOptions.appendChild(opcionesElemento);
     });
