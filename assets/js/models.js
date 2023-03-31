@@ -13,7 +13,5 @@ const blogModelo = {
     articulos: []
 };
 const contactoModelo = {
-    email: '',
-    whatsapp: '',
-    phone: ''
+    opciones: []
 };
