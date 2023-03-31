@@ -84,7 +84,7 @@ const contactoVista = {
 
   actualizar: function(modelo) {
     this.contactOptions.innerHTML = '';
-    modelo.opciones.forEach(opciones => {
+    modelo.opciones.forEach(opcion => {
       const opcionesElemento = document.createElement('div');
       opcionesElemento.classList.add('contacto-opciones');
       opcionesElemento.innerHTML = `
