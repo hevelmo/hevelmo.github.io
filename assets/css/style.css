@@ -1,638 +1,149 @@
-/* Resetear los estilos por defecto */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-font,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* Agregar estilos básicos a elementos comunes */
-body {
-  line-height: 1;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-ul {
-  padding: 0;
-  list-style-type: none;
-}
-
-a {
-  margin: 0 auto;
-  margin-left: 0 !important;
-  text-decoration: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* Establecer algunos estilos globales */
-html {
-  /*font-size: 62.5%;*/ /* Establecer el tamaño base de la fuente en 10px */
-}
-
-body {
-  /*font-size: 1.6rem;*/
-  font-family: sans-serif;
-  color: #333;
-  background-color: #fff;
-}
-
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-  }
-
-/* Estilos para encabezados */
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
-  font-size: 2.4rem; /* tamaño de fuente base */
-}
-
-/* Tamaños de fuente para diferentes encabezados */
-h1 {
-  font-size: 3.2rem;
-}
-
-h2 {
-  font-size: 2.6rem;
-}
-
-h3 {
-  font-size: 2.4rem;
-}
-
-h4 {
-  font-size: 2.2rem;
-}
-
-h5 {
-  font-size: 1.6rem;
-}
-
-h6 {
-  font-size: 1.4rem;
-}
-
-
-/* Estilos para imágenes */
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Imagenes retina */
-@media (-webkit-min-device-pixel-ratio: 2),
-       (min-resolution: 192dpi) {
-  img[srcset] {
-    background-image: none !important;
-    -webkit-background-size: contain !important;
-    -moz-background-size: contain !important;
-    -o-background-size: contain !important;
-    background-size: contain !important;
-  }
-  img[srcset]:after {
-    content: '';
-    display: block;
-    width: 1px;
-    height: 100%;
-    margin-left: -1px;
-    float: left;
-  }
-  img[srcset] > * {
-    max-height: 100%;
-  }
-  img[srcset] > * > img {
-    height: auto;
-    max-width: none;
-  }
-}
-
-  
-  header {
-    background-color: #333;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
+    background-color: #f5f5f5;
   }
   
-  nav ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav li {
-    margin-left: 20px;
-  }
-  
-  nav a {
-    color: white;
+  a {
     text-decoration: none;
   }
   
-  main {
-    padding: 20px;
-  }
-  
-  section {
-    margin-bottom: 50px;
-  }
-  
-  h2 {
-    margin-top: 0;
-  }
-  
-  #projects-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 20px;
-  }
-  
-  .project {
-    border: 1px solid #ddd;
-    padding: 20px;
-  }
-  
-  .project h3 {
-    margin-top: 0;
-  }
-  
-  .project p {
-    margin-bottom: 0;
-  }
-  
-  form label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  form input,
-  form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
-  
-  form button {
-    background-color: #333;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  /* Estilos para el encabezado */
+/* Estilos para el header y la navegación */
+
 header {
-  background-color: #333;
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-}
-
-header h1 {
-  margin: 0;
-}
-
-header nav a {
-  color: #fff;
-  text-decoration: none;
-  margin-left: 1rem;
-  padding: 0.5rem 1rem;
-}
-
-header nav a:hover {
-  text-decoration: underline;
-}
-
-/* Estilos para las secciones */
-section {
-  margin: 2rem auto;
-  max-width: 800px;
-}
-
-section h1, section h2, section h3, section h4, section h5, section h6 {
-  margin-bottom: 1rem;
-}
-
-section p {
-  line-height: 1.5;
-}
-
-/* Estilos para el botón de regreso */
-.back-btn {
-  display: block;
-  margin: 2rem 0;
-  padding: 0.5rem;
-  background-color: #333;
-  color: #fff;
-  border: none;
-  border-radius: 0.25rem;
-  cursor: pointer;
-}
-
-.back-btn:hover {
-  background-color: #444;
-}
-
-/* Estilos para las imágenes */
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Estilos para los enlaces de la navegación */
-/* Estilos para la navegación */
-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-nav ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-nav li {
-  margin: 0 1rem;
-  position: relative; /* para posicionar el pseudo-elemento */
-}
-
-nav a {
-  text-decoration: none;
-  color: #333;
-  font-size: 1.6rem;
-  font-weight: 500;
-  transition: all 0.2s ease-in-out; /* transición suave */
-}
-
-nav a::before {
-  content: '';
-  position: absolute;
-  bottom: -3px;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background-color: #333;
-  transform: scaleX(0); /* establece el ancho inicial en cero */
-  transform-origin: left; /* establece el punto de origen en la izquierda */
-  transition: transform 0.5s ease-in-out; /* transición suave */
-}
-
-/* Anima la línea inferior cuando se pasa el cursor por encima del enlace */
-nav a:hover::before {
-  transform: scaleX(0.5); /* establece el ancho en 100% */
-  transform-origin: right; /* cambia el punto de origen a la derecha */
-}
-
-/* Establece un estilo para el enlace activo */
-nav a.active {
-  color: #fff;
-  background-color: #333;
-  padding: 0.5rem 1rem;
-  border-radius: 2rem;
-}
-
-header nav a.active {
-  color: #fff;
-  text-decoration: none;
-  margin-left: 1rem;
-  position: relative; /* Agregamos posicionamiento relativo para poder animar */
-}
-
-/* Estilo para la línea que aparecerá debajo del enlace de navegación */
-header nav a.active::after {
-  content: '';
-  display: block;
-  height: 2px;
-  width: 0;
-  background-color: #fff;
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  transition: width 0.3s ease-in-out; /* Agregamos una transición suave a la propiedad "width" */
-}
-
-/* Estilo para animar la línea debajo del enlace de navegación al hacer clic */
-header nav a.active::after,
-header nav a:hover::after {
-  width: 100%;
-}
-
-/* Estilos para la sección Sobre mí */
-
-#sobre-mi {
-  background-color: #f9f9f9;
-  padding: 60px 0;
-}
-
-.sobre-mi-contenedor {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.sobre-mi-titulo {
-  text-align: center;
-  font-size: 36px;
-  color: #333;
-  margin-bottom: 40px;
-}
-
-.sobre-mi-contenido {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
-.sobre-mi-foto-contenedor {
-  flex: 0 0 300px;
-  margin-right: 40px;
-}
-
-.sobre-mi-foto {
-  width: 100%;
-  border-radius: 50%;
-}
-
-.sobre-mi-descripcion {
-  flex: 1 1 60%;
-  font-size: 18px;
-  color: #555;
-  margin-bottom: 40px;
-  text-align: justify;
-}
-
-.sobre-mi-habilidades {
-  flex: 1 1 30%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.sobre-mi-habilidad-nombre {
-  font-size: 18px;
-  color: #333;
-  margin-bottom: 10px;
-  width: 100%;
-}
-
-.sobre-mi-habilidad-nivel {
-  width: 100%;
-  height: 20px;
-  position: relative;
-}
-
-.sobre-mi-habilidad-nivel-fondo {
-  width: 100%;
-  height: 100%;
-  background-color: #ddd;
-  border-radius: 10px;
-}
-
-.sobre-mi-habilidad-nivel-valor {
-  height: 100%;
-  background-color: #4CAF50;
-  border-radius: 10px;
-}
-
-.sobre-mi-habilidad-nivel-porcentaje {
-  position: absolute;
-  top: -20px;
-  left: 0;
-  font-size: 14px;
-  color: #333;
-  width: 100%;
-  text-align: center;
-}
-/* Estilos para la sección de portafolio */
-
-.portafolio-contenedor {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 50px 0;
-}
-
-.portafolio-titulo {
-  font-size: 2.5rem;
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.portafolio-proyectos-contenedor {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.portafolio-proyecto {
-  max-width: 400px;
-  margin: 30px;
-  text-align: center;
-}
-
-.portafolio-proyecto-imagen {
-  max-width: 100%;
-  height: auto;
-}
-
-.portafolio-proyecto-titulo {
-  font-size: 1.5rem;
-  margin: 20px 0;
-}
-
-.portafolio-proyecto-descripcion {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-}
-
-.portafolio-proyecto-enlace {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #333;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-.portafolio-proyecto-enlace:hover {
-  background-color: #555;
-}
-
-#contacto {
-  background-color: #f5f5f5;
-  padding: 50px;
-  text-align: center;
-}
-
-#contacto h2 {
-  font-size: 36px;
-  margin-bottom: 30px;
-}
-
-#contact-form {
-  max-width: 500px;
-  margin: 0 auto;
-  text-align: left;
-}
-
-#contact-form label {
-  display: block;
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
-#contact-form input,
-#contact-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 2px solid #ddd;
-  border-radius: 5px;
-  font-size: 16px;
-}
-
-#contact-form textarea {
-  height: 200px;
-}
-
-#contact-form button {
-  background-color: #4CAF50;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-#contact-form button:hover {
-  background-color: #3e8e41;
-}
-
-#contact-direct {
-  margin-top: 50px;
-}
-
-#contact-direct h3 {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-#contact-direct ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-}
-
-#contact-direct li {
-  margin: 0 10px;
-}
-
-#contact-direct a {
-  display: flex;
-  align-items: center;
-  font-size: 18px;
-  color: #333;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-#contact-direct a:hover {
-  color: #4CAF50;
-}
-
-#contact-direct .fa {
-  margin-right: 10px;
-  font-size: 24px;
-}
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    }
+    
+    nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+    
+    nav li {
+    display: inline-block;
+    margin-left: 1rem;
+    }
+    
+    nav a {
+    color: #333333;
+    display: block;
+    font-size: 1.2rem;
+    padding: 1rem;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    }
+    
+    nav a:hover {
+    color: #CDB7B5;
+    }
+    
+    nav a.active {
+    color: #CDB7B5;
+    }
+    
+    /* Estilos para la sección Sobre mí */
+    
+    .sobre-mi-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 3rem;
+    }
+    
+    .sobre-mi-titulo {
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+    }
+    
+    .sobre-mi-foto-contenedor {
+    border: 10px solid #FFFFFF;
+    border-radius: 50%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    overflow: hidden;
+    width: 300px;
+    }
+    
+    .sobre-mi-foto {
+    display: block;
+    height: auto;
+    width: 100%;
+    }
+    
+    .sobre-mi-descripcion {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    text-align: justify;
+    width: 100%;
+    }
+    
+    .sobre-mi-habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+    
+    /* Estilos para la sección Portafolio */
+    
+    .portafolio-contenedor {
+    margin-top: 3rem;
+    }
+    
+    .portafolio-titulo {
+    font-size: 2rem;
+    text-align: center;
+    }
+    
+    .portafolio-proyectos-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+    
+    .portafolio-proyecto {
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    width: 300px;
+    }
+    
+    .portafolio-proyecto-imagen {
+    height: auto;
+    width: 100%;
+    }
+    
+    .portafolio-proyecto-titulo {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    }
+    
+    .portafolio-proyecto-descripcion {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    text-align: justify;
+    }
+    
+    .portafolio-proyecto-enlace {
+    background-color: #CDB7B5;
+    color: #FFFFFF;
+    display: block;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    }
+    
+    .portafolio-proyecto-enlace:hover {
+    background-color: #333333;
+    color: #FFFFFF;
+    }
