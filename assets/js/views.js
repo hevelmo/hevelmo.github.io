@@ -86,7 +86,7 @@ const contactoVista = {
     this.contactOptions.innerHTML = '';
     modelo.opciones.forEach(opcion => {
       const opcionesElemento = document.createElement('div');
-      opcionesElemento.classList.add('contact-opciones');
+      opcionesElemento.classList.add('contacto-opciones');
       opcionesElemento.innerHTML = `
         <a href="mailto:${opcion.email}" id="contact-email">Contáctame por correo electrónico</a>
         <a href="https://wa.me/${opcion.whatsapp}" target="_blank" id="contact-whatsapp">Contáctame por WhatsApp</a>
