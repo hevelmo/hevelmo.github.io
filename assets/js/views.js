@@ -89,6 +89,7 @@ const contactoVista = {
       opcionesElemento.classList.add('contacto-opciones');
       opcionesElemento.innerHTML = `
         <div class="contacto-opciones">
+          <p>${opcion.titulo}</p>
           <a href="mailto:${opcion.email}" id="contact-email">Contáctame por correo electrónico</a>
           <a href="https://wa.me/${opcion.whatsapp}" target="_blank" id="contact-whatsapp">Contáctame por WhatsApp</a>
           <a href="tel:${opcion.phone}" id="contact-phone">Contáctame por teléfono</a>

@@ -13,5 +13,6 @@ const blogModelo = {
     articulos: []
 };
 const contactoModelo = {
+    titulo: '',
     opciones: []
 };

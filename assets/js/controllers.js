@@ -59,6 +59,7 @@ const contactoControlador = {
     fetch('assets/data/contacto.json')
       .then(response => response.json())
       .then(data => {
+        contactoModelo.titulo = data.titulo;
         contactoModelo.email = data.email;
         contactoModelo.whatsapp = data.whatsapp;
         contactoModelo.phone = data.phone;
