@@ -79,7 +79,7 @@ const blogVista = {
 
 const contactoVista = {
   init: function() {
-    this.contactOptions = document.querySelector('.contact-options-contenedor');
+    this.contactOptions = document.querySelector('.contacto-opciones-contenedor');
   },
 
   actualizar: function(modelo) {
