@@ -1,8 +1,12 @@
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    background-color: #f9f9f9; /* Color de fondo claro */
+    font-family: Arial, sans-serif; /* Fuente predeterminada */
+    font-size: 16px; /* Tamaño de fuente predeterminado */
+    line-height: 1.5; /* Altura de línea predeterminada */
+    color: #333; /* Color de texto predeterminado */
   }
+  
   
   a {
     text-decoration: none;
