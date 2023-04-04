@@ -1,6 +1,6 @@
 /* Estilos generales */
 body {
-  background-color: #85898a; /* Color de fondo claro */
+  background-color: #000000; /* Color de fondo claro */
   font-family: Arial, sans-serif; /* Fuente predeterminada */
   font-size: 16px; /* Tamaño de fuente predeterminado */
   line-height: 1.5; /* Altura de línea predeterminada */
@@ -15,11 +15,10 @@ cony mendez
 el poder de la hora ekar tool
 
 /* background gradiente animation */
-
 .background.--gradient {
-  background: #85898a;
-  background: -webkit-linear-gradient(top left, #85898a 0%, #e5e6e8 100%);
-  background: linear-gradient(to bottom right, #85898a 0%, #e5e6e8 100%);
+  background: #868686;
+  background: -webkit-linear-gradient(top left, #868686 0%, #bebcbc 100%);
+  background: linear-gradient(to bottom right, #868686 0%, #bebcbc 100%);
   position: fixed;
   overflow: hidden;
   top: 0;
@@ -190,17 +189,6 @@ header {
     nav a.active {
     color: #CDB7B5;
     }
-
-    /* Estructura responsive */
-@media screen and (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-  }
-
-  nav ul li {
-    margin: 10px 0;
-  }
-}
     
     /* Estilos para la sección Sobre mí */
     

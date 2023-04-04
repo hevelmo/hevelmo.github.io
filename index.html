@@ -9,7 +9,24 @@
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <![endif]-->
     </head>
+
     <body>
+
+        <div class="background --gradient">
+            <ul class="bg --bubbles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+
         <header>
             <!-- Vista del encabezado -->
             <nav>
@@ -21,6 +38,7 @@
                 </ul>
             </nav>
         </header>
+
         <main>
             <section id="sobre-mi">
                 <h1>Sobre mí</h1>
@@ -73,12 +91,7 @@
                 <!-- Vista de la sección Contacto -->
                 <h2>Contáctame</h2>
                 <div class="contacto-opciones-contenedor">
-                    <div class="contacto-opciones">
-                        <p class="contact-titulo">¡No dudes en contactarme por cualquiera de las siguientes opciones!</p>
-                        <a href="mailto:ejemplo@ejemplo.com"" id="contact-email">Contáctame por correo electrónico</a>
-                        <a href="https://wa.me/123456789" target="_blank" id="contact-whatsapp">Contáctame por WhatsApp</a>
-                        <a href="tel:555-123-4567" id="contact-phone">Contáctame por teléfono</a>
-                    </div>
+                    <p class="contact-titulo"></p>
                 </div>
               </section>
               
@@ -105,7 +118,7 @@
             sobreMiControlador.init();
             portafolioControlador.init();
             blogControlador.init();
-            //contactoControlador.init();
+            contactoControlador.init();
         </script>
     </body>
 </html>
