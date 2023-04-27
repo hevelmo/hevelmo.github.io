@@ -1,0 +1,236 @@
+@import "variables";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?g1kp0c');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?g1kp0c#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?g1kp0c') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?g1kp0c') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?g1kp0c##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ski-adobe-dreamweaver-cc .path1 {
+  &:before {
+    content: $ski-adobe-dreamweaver-cc-path1;  
+    color: rgb(71, 1, 55);
+  }
+}
+.ski-adobe-dreamweaver-cc .path2 {
+  &:before {
+    content: $ski-adobe-dreamweaver-cc-path2;  
+    margin-left: -1em;  
+    color: rgb(255, 97, 246);
+  }
+}
+.ski-adobe-dreamweaver-cc .path3 {
+  &:before {
+    content: $ski-adobe-dreamweaver-cc-path3;  
+    margin-left: -1em;  
+    color: rgb(255, 97, 246);
+  }
+}
+.ski-adobe-photoshop-cc .path1 {
+  &:before {
+    content: $ski-adobe-photoshop-cc-path1;  
+    color: rgb(0, 30, 54);
+  }
+}
+.ski-adobe-photoshop-cc .path2 {
+  &:before {
+    content: $ski-adobe-photoshop-cc-path2;  
+    margin-left: -1em;  
+    color: rgb(49, 168, 255);
+  }
+}
+.ski-adobe-photoshop-cc .path3 {
+  &:before {
+    content: $ski-adobe-photoshop-cc-path3;  
+    margin-left: -1em;  
+    color: rgb(49, 168, 255);
+  }
+}
+.ski-adobe-illustrator-cc .path1 {
+  &:before {
+    content: $ski-adobe-illustrator-cc-path1;  
+    color: rgb(51, 0, 0);
+  }
+}
+.ski-adobe-illustrator-cc .path2 {
+  &:before {
+    content: $ski-adobe-illustrator-cc-path2;  
+    margin-left: -1.025390625em;  
+    color: rgb(255, 154, 0);
+  }
+}
+.ski-adobe-xd-cc .path1 {
+  &:before {
+    content: $ski-adobe-xd-cc-path1;  
+    color: rgb(71, 1, 55);
+  }
+}
+.ski-adobe-xd-cc .path2 {
+  &:before {
+    content: $ski-adobe-xd-cc-path2;  
+    margin-left: -1em;  
+    color: rgb(255, 97, 246);
+  }
+}
+.ski-adobe-xd-cc .path3 {
+  &:before {
+    content: $ski-adobe-xd-cc-path3;  
+    margin-left: -1em;  
+    color: rgb(255, 97, 246);
+  }
+}
+.ski-figma .path1 {
+  &:before {
+    content: $ski-figma-path1;  
+    color: rgb(51, 51, 51);
+  }
+}
+.ski-figma .path2 {
+  &:before {
+    content: $ski-figma-path2;  
+    margin-left: -1em;  
+    color: rgb(10, 207, 131);
+  }
+}
+.ski-figma .path3 {
+  &:before {
+    content: $ski-figma-path3;  
+    margin-left: -1em;  
+    color: rgb(162, 89, 255);
+  }
+}
+.ski-figma .path4 {
+  &:before {
+    content: $ski-figma-path4;  
+    margin-left: -1em;  
+    color: rgb(242, 78, 30);
+  }
+}
+.ski-figma .path5 {
+  &:before {
+    content: $ski-figma-path5;  
+    margin-left: -1em;  
+    color: rgb(255, 114, 98);
+  }
+}
+.ski-figma .path6 {
+  &:before {
+    content: $ski-figma-path6;  
+    margin-left: -1em;  
+    color: rgb(26, 188, 254);
+  }
+}
+.ski-lunacy .path1 {
+  &:before {
+    content: $ski-lunacy-path1;  
+    color: rgb(33, 150, 243);
+  }
+}
+.ski-lunacy .path2 {
+  &:before {
+    content: $ski-lunacy-path2;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.ski-bootstrap {
+  &:before {
+    content: $ski-bootstrap; 
+  }
+}
+.ski-ajax .path1 {
+  &:before {
+    content: $ski-ajax-path1;  
+    color: rgb(140, 150, 161);
+  }
+}
+.ski-ajax .path2 {
+  &:before {
+    content: $ski-ajax-path2;  
+    margin-left: -1.42578125em;  
+    color: rgb(140, 150, 161);
+  }
+}
+.ski-ajax .path3 {
+  &:before {
+    content: $ski-ajax-path3;  
+    margin-left: -1.42578125em;  
+    color: rgb(140, 150, 161);
+  }
+}
+.ski-ajax .path4 {
+  &:before {
+    content: $ski-ajax-path4;  
+    margin-left: -1.42578125em;  
+    color: rgb(140, 150, 161);
+  }
+}
+.ski-ajax .path5 {
+  &:before {
+    content: $ski-ajax-path5;  
+    margin-left: -1.42578125em;  
+    color: rgb(140, 150, 161);
+  }
+}
+.ski-ajax .path6 {
+  &:before {
+    content: $ski-ajax-path6;  
+    margin-left: -1.42578125em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.ski-son {
+  &:before {
+    content: $ski-son; 
+  }
+}
+.ski-jquery {
+  &:before {
+    content: $ski-jquery; 
+  }
+}
+.ski-handlebars {
+  &:before {
+    content: $ski-handlebars; 
+  }
+}
+.ski-slim .path1 {
+  &:before {
+    content: $ski-slim-path1;  
+    color: rgb(114, 149, 68);
+  }
+}
+.ski-slim .path2 {
+  &:before {
+    content: $ski-slim-path2;  
+    margin-left: -0.9404296875em;  
+    color: rgb(147, 189, 90);
+  }
+}
+.ski-twig {
+  &:before {
+    content: $ski-twig; 
+  }
+}
+
