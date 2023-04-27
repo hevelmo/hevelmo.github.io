@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'skills-icon';
-  src:  url('../../font/skills-icons/skills-icon.eot?g1kp0c');
-  src:  url('../../font/skills-icons/skills-icon.eot?g1kp0c#iefix') format('embedded-opentype'),
-    url('../../font/skills-icons/skills-icon.ttf?g1kp0c') format('truetype'),
-    url('../../font/skills-icons/skills-icon.woff?g1kp0c') format('woff'),
-    url('../../font/skills-icons/skills-icon.svg?g1kp0c#skills-icon') format('svg');
+  src:  url('../../../font/skills-icons/skills-icon.eot?g1kp0c');
+  src:  url('../../../font/skills-icons/skills-icon.eot?g1kp0c#iefix') format('embedded-opentype'),
+    url('../../../font/skills-icons/skills-icon.ttf?g1kp0c') format('truetype'),
+    url('../../../font/skills-icons/skills-icon.woff?g1kp0c') format('woff'),
+    url('../../../font/skills-icons/skills-icon.svg?g1kp0c#skills-icon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
