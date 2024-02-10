@@ -12,103 +12,893 @@
 
     <body>
 
-        <div class="background --gradient">
-            <ul class="bg --bubbles">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
+         <div class="background --gradient">
+	<ul class="bg --bubbles">
+			<li><i class="fab fa-html5"></i></li>
+			<li><i class="fab fa-css3-alt"></i></li>
+			<li><i class="fab fa-php"></i></li>
+			<li><i class="fas fa-code"></i></li>
+			<li><i class="fab fa-js"></i></li>
+			<li><i class="fab fa-sass"></i></li>
+			<li><i class="fas fa-laptop"></i></li>
+			<li><i class="fas fa-images"></i></li>
+			<li><i class="fas fa-database"></i></li>
+			<li><i class="fas fa-copyright"></i></li>
+	</ul>
+</div>
+
+<header class="portafolio-header">
+  <div class="portafolio-header__logo">
+    <a href="#">
+      <img src="https://hevelmo.github.io/assets/img/profile/descarga.png" alt="Logo del portafolio de desarrollo web">
+    </a>
+  </div>
+  <nav class="portafolio-header__nav --navigation">
+		<ul>
+			<li><a href="#presentacion" class="active"><i class="fas fa-home"></i>Presentación</a></li>
+			<li><a href="#sobre-mi"><i class="fas fa-user"></i>Sobre mí</a></li>
+			<li><a href="#resume"><i class="fas fa-file-alt"></i>Resumen profesional</a></li>
+			<li><a href="#portafolio"><i class="fas fa-briefcase"></i>Portafolio</a></li>
+			<li><a href="#blog"><i class="fas fa-blog"></i>Blog</a></li>
+			<li><a href="#contacto"><i class="fas fa-envelope"></i>Contacto</a></li>
+		</ul>
+	</nav>
+  <button class="portafolio-header__toggle-nav" aria-label="Toggle Navigation Menu">
+    <span class="hamburger"></span>
+  </button>
+</header>
+<main>
+	<section id="presentacion" class="portafolio-presentacion">
+		<div class="portafolio-presentacion__container">
+			<!--<div class="portafolio-presentacion__title-bg">Presentación</div>-->
+			<div class="portafolio-presentacion__foto">
+				<img src="https://hevelmo.github.io/assets/img/profile/images.png" alt="Foto de perfil de usuario">
+			</div>
+			<div class="portafolio-presentacion__nombre">
+				<h1>Heriberto Velasco Mora</h1>
+			</div>
+			<div class="portafolio-presentacion__subtitulo">
+				<h2 id="output">Desarrollador Full-stack</h2>
+			</div>
+			<div class="portafolio-presentacion__redes">
+				<ul>
+					<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+					<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+					<li><a href="#"><i class="fab fa-github"></i></a></li>
+					<li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+				</ul>
+			</div>
+			<div class="portafolio-presentacion__cta">
+				<a href="#" class="portafolio-presentacion__cta--contacto"><i class="far fa-envelope"></i>Contacto</a>
+				<a href="#" class="portafolio-presentacion__cta--cv">Descargar CV <i class="fas fa-cloud-download-alt"></i></a>
+			</div>
+		</div>
+	</section>
+	<section id="sobre-mi" class="portafolio-sobre-mi">
+		<div class="portafolio-sobre-mi__container">
+			<div class="portafolio-sobre-mi__title-bg">Sobre Mí</div>
+			<div class="portafolio-sobre-mi__about">
+				<div class="portafolio-sobre-mi__about__icon about-icon">
+					<i class="fas fa-user"></i>
+				</div>
+				<div class="portafolio-sobre-mi__about__title about-title">
+					<h2>Sobre Mí</h2>
+				</div>
+				<div class="portafolio-sobre-mi__about__description about-description">
+					<p>Soy <strong>desarrollador</strong> y <strong>programador web</strong>, con un amplio conocimiento en ambas partes <strong>Front end</strong> y <strong>Back end</strong> para el diseño y la construcción de sitios web desde cero en su desarrollo y su visualización <strong>responsive web design</strong> para dispositivos moviles, diseño para sistemas y componentes web.</p>
+					<ul>
+						<li class="about-description-age">
+							<span>Edad</span>
+							39
+						</li>
+						<li class="about-description-email">
+							<span>Correo electrónico</span>
+							<a class="portafolio-sobre-mi__email" href="mailto:heribertovelascomora@gmail.com">
+								Envíame un correo
+							</a>
+						</li>
+						<li class="about-description-phone">
+							<span>Teléfono</span>
+							<a class="portafolio-sobre-mi__phone" href="tel:3329490223">
+								Llamáme
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="portafolio-sobre-mi__what-i-do">
+				<div class="portafolio-sobre-mi__what-i-do__icon what-i-do-icon">
+					<i class="fa-solid fa-code"></i>
+				</div>
+				<div class="portafolio-sobre-mi__what-i-do__title what-i-do-title">
+					<h2>Lo que hago</h2>
+				</div>
+				<div class="portafolio-sobre-mi__what-i-do__carousel what-i-do-carousel">
+					<div id="card-container">
+						<div class="card-slider">
+							<div class="card">
+								<div class="portafolio-servicios__container">
+									<div class="portafolio-servicios__item">
+										<div class="portafolio-servicios__icon servicios-icon">
+											<i class="fas fa-code"></i>
+										</div>
+										<div class="portafolio-servicios__content servicios-content">
+											<h3 class="portafolio-servicios__name servicios-name">Desarrollo web</h3>
+											<p class="portafolio-servicios__description servicios-descripcion">Desarrollo de sitios web modernos y atractivos, utilizando las últimas tecnologías y tendencias en diseño web. Me enfoco en crear sitios web personalizados y a medida para cada uno de mis clientes.</p>
+											<div class="portafolio-servicios__tecnologias servicios-tecnologias">
+												<span class="portafolio-servicios__tecnologia"><i class="fab fa-html5"></i></span>
+												<span class="portafolio-servicios__tecnologia"><i class="fab fa-css3-alt"></i></span>
+												<span class="portafolio-servicios__tecnologia"><i class="fab fa-js-square"></i></span>
+												<span class="portafolio-servicios__tecnologia"><i class="fab fa-php"></i></span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="portafolio-servicios__container">
+									<div class="portafolio-servicios__item">
+										<div class="portafolio-servicios__icon servicios-icon">
+											<i class="fas fa-paint-brush"></i>
+										</div>
+										<div class="portafolio-servicios__content servicios-content">
+											<h3 class="portafolio-servicios__name servicios-name">Desarrollo UI & UX</h3>
+											<p class="portafolio-servicios__description servicios-descripcion">Creación de interfaces de usuario y experiencia de usuario intuitivas y atractivas, adaptadas a las necesidades y objetivos de cada proyecto.</p>
+											<div class="portafolio-servicios__tecnologias servicios-tecnologias">
+												<span class="portafolio-servicios__tecnologia"><i class="fab fa-figma"></i></span>
+												<span class="portafolio-servicios__tecnologia"><i class="fab fa-adobe"></i></span>
+												<span class="portafolio-servicios__tecnologia"><i class="fab fa-sketch"></i></span>
+												<span class="portafolio-servicios__tecnologia"><i class="fas fa-code"></i></span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="portafolio-servicios__container">
+									<div class="portafolio-servicios__item">
+										<div class="portafolio-servicios__icon servicios-icon">
+											<i class="fas fa-paint-brush"></i>
+										</div>
+										<div class="portafolio-servicios__content servicios-content">
+											<h3 class="portafolio-servicios__name servicios-name">Diseño Gráfico</h3>
+											<p class="portafolio-servicios__description servicios-descripcion">Diseño gráfico creativo y efectivo para tu marca, incluyendo diseño de logos, folletos, carteles, tarjetas de presentación, entre otros. Me enfoco en crear diseños únicos y a medida para cada uno de mis clientes.</p>
+											<div class="portafolio-servicios__tecnologias servicios-tecnologias">
+												<span class="portafolio-servicios__tecnologia"><i class="fab fa-adobe"></i></span>
+												<span class="portafolio-servicios__tecnologia"><i class="fas fa-vector-square"></i></span>
+												<span class="portafolio-servicios__tecnologia"><i class="fas fa-images"></i></span>
+												<span class="portafolio-servicios__tecnologia"><i class="fas fa-palette"></i></span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="portafolio-servicios__container">
+									<div class="portafolio-servicios__item">
+										<div class="portafolio-servicios__icon servicios-icon">
+											<i class="fas fa-bullhorn"></i>
+										</div>
+										<div class="portafolio-servicios__content servicios-content">
+											<h3 class="portafolio-servicios__name servicios-name">Marketing Digital</h3>
+											<p class="portafolio-servicios__description servicios-descripcion">Campañas efectivas de marketing digital para mejorar la visibilidad y la presencia de tu marca en línea. Me enfoco en generar resultados medibles y en ayudarte a alcanzar tus objetivos de negocio.</p>
+											<div class="portafolio-servicios__tecnologias servicios-tecnologias">
+												<span class="portafolio-servicios__tecnologia"><i class="fab fa-google"></i></span>
+												<span class="portafolio-servicios__tecnologia"><i class="fab fa-facebook"></i></span>
+												<span class="portafolio-servicios__tecnologia"><i class="fab fa-instagram"></i></span>
+												<span class="portafolio-servicios__tecnologia"><i class="fas fa-chart-line"></i></span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="portafolio-servicios__container">
+									<div class="portafolio-servicios__item">
+										<div class="portafolio-servicios__icon servicios-icon">
+											<i class="fas fa-rocket"></i>
+										</div>
+										<div class="portafolio-servicios__content servicios-content">
+											<h3 class="portafolio-servicios__name servicios-name">Prototipos para landing page</h3>
+											<p class="portafolio-servicios__description servicios-descripcion">Creación de prototipos para páginas de destino efectivas y atractivas, con el objetivo de aumentar la conversión y el engagement.</p>
+											<div class="portafolio-servicios__tecnologias servicios-tecnologias">
+												<span class="portafolio-servicios__tecnologia"><i class="fab fa-html5"></i></span>
+												<span class="portafolio-servicios__tecnologia"><i class="fab fa-css3-alt"></i></span>
+												<span class="portafolio-servicios__tecnologia"><i class="fab fa-js-square"></i></span>
+												<span class="portafolio-servicios__tecnologia"><i class="fab fa-react"></i></span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="portafolio-servicios__container">
+									<div class="portafolio-servicios__item">
+										<div class="portafolio-servicios__icon servicios-icon">
+											<i class="fas fa-shopping-cart"></i>
+										</div>
+										<div class="portafolio-servicios__content servicios-content">
+											<h3 class="portafolio-servicios__name servicios-name">Ecommerce</h3>
+											<p class="portafolio-servicios__description servicios-descripcion">Diseño y desarrollo de tiendas en línea que generan ventas. Me enfoco en la usabilidad y en proporcionar una experiencia de usuario excepcional. Las tiendas que desarrollo incluyen características avanzadas como búsqueda de productos, carrito de compras, procesamiento de pagos y más.</p>
+											<div class="portafolio-servicios__tecnologias servicios-tecnologias">
+												<span class="portafolio-servicios__tecnologia"><i class="fab fa-html5"></i></span>
+												<span class="portafolio-servicios__tecnologia"><i class="fab fa-css3-alt"></i></span>
+												<span class="portafolio-servicios__tecnologia"><i class="fab fa-js-square"></i></span>
+												<span class="portafolio-servicios__tecnologia"><i class="fab fa-php"></i></span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="portafolio-servicios__container">
+									<div class="portafolio-servicios__item">
+										<div class="portafolio-servicios__icon servicios-icon">
+											<i class="fas fa-palette"></i>
+										</div>
+										<div class="portafolio-servicios__content servicios-content">
+											<h3 class="portafolio-servicios__name servicios-name">Design system y Web Components</h3>
+											<p class="portafolio-servicios__description servicios-descripcion">Creación de un sistema de diseño coherente y eficiente, con la implementación de componentes web personalizados y reutilizables en diferentes proyectos. Me enfoco en la estandarización de elementos visuales y de interacción, para lograr una experiencia de usuario consistente y agradable.</p>
+											<div class="portafolio-servicios__tecnologias servicios-tecnologias">
+												<span class="portafolio-servicios__tecnologia"><i class="fab fa-html5"></i></span>
+												<span class="portafolio-servicios__tecnologia"><i class="fab fa-css3-alt"></i></span>
+												<span class="portafolio-servicios__tecnologia"><i class="fab fa-js-square"></i></span>
+												<span class="portafolio-servicios__tecnologia"><i class="fab fa-react"></i></span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="portafolio-servicios__container">
+									<div class="portafolio-servicios__item">
+										<div class="portafolio-servicios__icon servicios-icon">
+											<i class="fas fa-cube"></i>
+										</div>
+										<div class="portafolio-servicios__content servicios-content">
+											<h3 class="portafolio-servicios__name servicios-name">Atomic Design</h3>
+											<p class="portafolio-servicios__description servicios-descripcion">Creación de diseños web escalables y mantenibles mediante la metodología Atomic Design. Utilizo componentes reutilizables para crear interfaces de usuario coherentes y eficientes.</p>
+											<div class="portafolio-servicios__tecnologias servicios-tecnologias">
+												<span class="portafolio-servicios__tecnologia"><i class="fab fa-html5"></i></span>
+												<span class="portafolio-servicios__tecnologia"><i class="fab fa-css3-alt"></i></span>
+												<span class="portafolio-servicios__tecnologia"><i class="fab fa-js-square"></i></span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="portafolio-servicios__container">
+									<div class="portafolio-servicios__item">
+										<div class="portafolio-servicios__icon servicios-icon">
+											<i class="fas fa-laptop"></i>
+										</div>
+										<div class="portafolio-servicios__content servicios-content">
+											<h3 class="portafolio-servicios__name servicios-name">Sitios web responsivos y PWA</h3>
+											<p class="portafolio-servicios__description servicios-descripcion">Desarrollo de sitios web responsivos y progresivos para mejorar la experiencia del usuario. Los sitios web PWA permiten la instalación en el dispositivo y funcionamiento offline.</p>
+											<div class="portafolio-servicios__tecnologias servicios-tecnologias">
+												<span class="portafolio-servicios__tecnologia"><i class="fab fa-html5"></i></span>
+												<span class="portafolio-servicios__tecnologia"><i class="fab fa-css3-alt"></i></span>
+												<span class="portafolio-servicios__tecnologia"><i class="fab fa-js-square"></i></span>
+												<span class="portafolio-servicios__tecnologia"><i class="fab fa-react"></i></span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="portafolio-servicios__container">
+									<div class="portafolio-servicios__item">
+										<div class="portafolio-servicios__icon servicios-icon">
+											<i class="fas fa-users"></i>
+										</div>
+										<div class="portafolio-servicios__content servicios-content">
+											<h3 class="portafolio-servicios__name servicios-name">CRM</h3>
+											<p class="portafolio-servicios__description servicios-descripcion">Desarrollo de sistemas de gestión de relaciones con clientes (CRM) para ayudarte a mejorar tus relaciones con los clientes y optimizar tus procesos de venta.</p>
+											<div class="portafolio-servicios__tecnologias servicios-tecnologias">
+												<span class="portafolio-servicios__tecnologia"><i class="fab fa-html5"></i></span>
+												<span class="portafolio-servicios__tecnologia"><i class="fab fa-css3-alt"></i></span>
+												<span class="portafolio-servicios__tecnologia"><i class="fab fa-js-square"></i></span>
+												<span class="portafolio-servicios__tecnologia"><i class="fab fa-php"></i></span>
+												<span class="portafolio-servicios__tecnologia"><i class="fas fa-database"></i></span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="portafolio-servicios__container">
+									<div class="portafolio-servicios__item">
+										<div class="portafolio-servicios__icon servicios-icon">
+											<i class="fas fa-laptop-code"></i>
+										</div>
+										<div class="portafolio-servicios__content servicios-content">
+											<h3 class="portafolio-servicios__name servicios-name">MVC con PHP, Oracle/MySQL</h3>
+											<p class="portafolio-servicios__description servicios-descripcion">Desarrollo de aplicaciones web utilizando el patrón MVC con PHP y bases de datos Oracle o MySQL. Me enfoco en crear soluciones escalables y eficientes para las necesidades específicas de cada cliente.</p>
+											<div class="portafolio-servicios__tecnologias servicios-tecnologias">
+												<span class="portafolio-servicios__tecnologia"><i class="fab fa-html5"></i></span>
+												<span class="portafolio-servicios__tecnologia"><i class="fab fa-css3-alt"></i></span>
+												<span class="portafolio-servicios__tecnologia"><i class="fab fa-js-square"></i></span>
+												<span class="portafolio-servicios__tecnologia"><i class="fab fa-php"></i></span>
+												<span class="portafolio-servicios__tecnologia"><i class="fab fa-oracle"></i></span>
+												<span class="portafolio-servicios__tecnologia"><i class="fas fa-database"></i></span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<label for="cards-per-page" style="display: none;">Cards per page:</label>
+					<select id="cards-per-page" style="display: none;">
+						<option value="1" selected>1</option>
+						<option value="2">2</option>
+						<option value="4">4</option>
+						<option value="6">6</option>
+						<option value="8">8</option>
+						<option value="10">10</option>
+					</select>
+					<div id="pagination-container"></div>
+				</div>
+			</div>
+			<div class="portafolio-sobre-mi__jobs">
+				<div class="portafolio-sobre-mi__jobs__icon jobs-icon">
+					<i class="fa-solid fa-industry"></i>
+				</div>
+				<div class="portafolio-sobre-mi__jobs__title jobs-title">
+					<h2>Empresas y clientes</h2>
+				</div>
+				<div class="portafolio-sobre-mi__jobs__carousel jobs-carousel">
+					<div class="carousel-container">
+						<div class="carousel">
+							<div class="cards-wrapper">
+								<div class="carousel-card carousel-card-1">
+									<div class="card-content" style="
+">
+										<img src="https://hevelmo.github.io/assets/img/jobs/cva-logo.png" alt="CVA logo" class="card-jobs-image jobs-carousel-image" style="
+">
+										<h2 class="card-jobs-title jobs-carousel-title" style="
+">Comercializadora de Valor Agregado S.A. de C.V. (CVA)</h2>
+										<p class="card-jobs-employee jobs-carousel-employee-type">Empleado</p>
+										<p class="card-jobs-business jobs-carousel-business-type">Tecnologia y distribución de equipos de computo y tecnologia</p>
+									</div>
+								</div>
+								<div class="carousel-card carousel-card-2">
+									<div class="card-content">
+										<img src="https://hevelmo.github.io/assets/img/jobs/medigraf-logo.png" alt="Medigraf logo" class="card-jobs-image jobs-carousel-image">
+										<h2 class="card-jobs-title jobs-carousel-title">Medigraf</h2>
+										<p class="card-jobs-employee jobs-carousel-employee-type">Empleado</p>
+										<p class="card-jobs-business jobs-carousel-business-type">Agencia de publicidad y diseño</p>
+									</div>
+								</div>
+								<div class="carousel-card carousel-card-3">
+									<div class="card-content">
+										<img src="https://hevelmo.github.io/assets/img/jobs/panamerik-logo.png" alt="Panamerik Agencia Ecommerce logo" class="card-jobs-image card-jobs-special-image">
+										<h2 class="card-jobs-title jobs-carousel-title">Panamerik Agencia Ecommerce</h2>
+										<p class="card-jobs-employee jobs-carousel-employee-type">Empleado</p>
+										<p class="card-jobs-business jobs-carousel-business-type">Agencia Ecommerce, Magento/Adobe Commerce/SEO/</p>
+									</div>
+								</div>
+								<div class="carousel-card carousel-card-1">
+									<div class="card-content" style="
+">
+										<img src="https://hevelmo.github.io/assets/img/jobs/cva-logo.png" alt="CVA logo" class="card-jobs-image jobs-carousel-image" style="
+">
+										<h2 class="card-jobs-title jobs-carousel-title" style="
+">Comercializadora de Valor Agregado S.A. de C.V. (CVA)</h2>
+										<p class="card-jobs-employee jobs-carousel-employee-type">Empleado</p>
+										<p class="card-jobs-business jobs-carousel-business-type">Tecnologia y distribución de equipos de computo y tecnologia</p>
+									</div>
+								</div>
+								<div class="carousel-card carousel-card-2">
+									<div class="card-content">
+										<img src="https://hevelmo.github.io/assets/img/jobs/medigraf-logo.png" alt="Medigraf logo" class="card-jobs-image jobs-carousel-image">
+										<h2 class="card-jobs-title jobs-carousel-title">Medigraf</h2>
+										<p class="card-jobs-employee jobs-carousel-employee-type">Empleado</p>
+										<p class="card-jobs-business jobs-carousel-business-type">Agencia de publicidad y diseño</p>
+									</div>
+								</div>
+								<div class="carousel-card carousel-card-3">
+									<div class="card-content">
+										<img src="https://hevelmo.github.io/assets/img/jobs/panamerik-logo.png" alt="Panamerik Agencia Ecommerce logo" class="card-jobs-image card-jobs-special-image">
+										<h2 class="card-jobs-title jobs-carousel-title">Panamerik Agencia Ecommerce</h2>
+										<p class="card-jobs-employee jobs-carousel-employee-type">Empleado</p>
+										<p class="card-jobs-business jobs-carousel-business-type">Agencia Ecommerce, Magento/Adobe Commerce/SEO/</p>
+									</div>
+								</div>
+								<div class="carousel-card carousel-card-1">
+									<div class="card-content" style="
+">
+										<img src="https://hevelmo.github.io/assets/img/jobs/cva-logo.png" alt="CVA logo" class="card-jobs-image jobs-carousel-image" style="
+">
+										<h2 class="card-jobs-title jobs-carousel-title" style="
+">Comercializadora de Valor Agregado S.A. de C.V. (CVA)</h2>
+										<p class="card-jobs-employee jobs-carousel-employee-type">Empleado</p>
+										<p class="card-jobs-business jobs-carousel-business-type">Tecnologia y distribución de equipos de computo y tecnologia</p>
+									</div>
+								</div>
+								<div class="carousel-card carousel-card-2">
+									<div class="card-content">
+										<img src="https://hevelmo.github.io/assets/img/jobs/medigraf-logo.png" alt="Medigraf logo" class="card-jobs-image jobs-carousel-image">
+										<h2 class="card-jobs-title jobs-carousel-title">Medigraf</h2>
+										<p class="card-jobs-employee jobs-carousel-employee-type">Empleado</p>
+										<p class="card-jobs-business jobs-carousel-business-type">Agencia de publicidad y diseño</p>
+									</div>
+								</div>
+								<div class="carousel-card carousel-card-3">
+									<div class="card-content">
+										<img src="https://hevelmo.github.io/assets/img/jobs/panamerik-logo.png" alt="Panamerik Agencia Ecommerce logo" class="card-jobs-image card-jobs-special-image">
+										<h2 class="card-jobs-title jobs-carousel-title">Panamerik Agencia Ecommerce</h2>
+										<p class="card-jobs-employee jobs-carousel-employee-type">Empleado</p>
+										<p class="card-jobs-business jobs-carousel-business-type">Agencia Ecommerce, Magento/Adobe Commerce/SEO/</p>
+									</div>
+								</div>
+							</div>
+							<button class="carousel-nav carousel-prev"><i class="fa fa-chevron-left"></i></button>
+							<button class="carousel-nav carousel-next"><i class="fa fa-chevron-right"></i></button>
+							<div class="carousel-dots"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="resume" class="portafolio-resume">
+		<div class="portafolio-resume__container">
+			<div class="portafolio-presume__title-bg">Resumen</div>
+			<div class="portafolio-resume__career-and-education">
+				<div class="portafolio-resume__career-and-education__icon career-and-education-icon">
+					<i class="fas fa-graduation-cap"></i>
+				</div>
+				<div class="portafolio-resume__career-and-education__title career-and-education-title">
+					<h2>Experiencia y Educación</h2>		
+				</div>
+				<div class="portafolio-resume__career-and-education__timeline-container career-and-education-timeline">
+					<div class="timeline-container">
+						<div class="column experience">
+							<div class="column-icon">
+								<i class="fa-solid fa-briefcase"></i>
+							</div>
+							<h2 class="column-title">Experiencia</h2>
+							<div class="timeline">
+								<div class="timeline experience-timeline">
+									<div class="timeline-item">
+										<div class="timeline-item__date">2017 - 2022</div>
+										<div class="timeline-item__info">
+											<h4 class="timeline-item__company">Comercializadora de Valor Agregado S.A. de C.V. (CVA)</h4>
+											<h5 class="timeline-item__title">Desarrollador Web</h5>
+											<p class="timeline-item__description">En esta posición fui responsable del <strong>desarrollo Front y Back End</strong> en el cual me encargue de realizar las estructuras de <strong>sitios web internas</strong> para la empresa en colaboración con otros desarrolladores para <strong>funcionalidades internas de la gestion de la empresa</strong>, así mismo en el <strong>desarrollo de sitio web</strong> <a href="https://www.ghia.com.mx/">GHIA</a>, marca propia de empresa, el <strong>desarrollo del sitio web</strong> <a href="https://www.ocelot.com.mx/">Ocelot</a> <strong>sitio de venta de tecnología de computo para gamers</strong>, <strong>desarrollo de ecommers</strong> para venta de aparatos tecnologicos, dispositivos y computo sitio unicamente con ingreso para <strong>usuarios registrados</strong> clientes y distribuidores.</p>
+										</div>
+									</div>
+									<div class="timeline-item">
+										<div class="timeline-item__date">2014 - 2017</div>
+										<div class="timeline-item__info">
+											<h4 class="timeline-item__company">Medigraf, Agencia de desarrollo web</h4>
+											<h5 class="timeline-item__title">Desarrollador Front End</h5>
+											<p class="timeline-item__description">En esta posición fui responsable del <strong>desarrollo Front End</strong> en el cual me encargue de realizar las <strong>estructuras de diseño y programación web desde cero</strong> en base a las peticiones de los clientes para sus <strong>aplicaciones web</strong>, así mismo reestructurando plantillas ya creadas para mejorar <strong>el diseño y la presentación web con la usabilidad y visualización para dispositivos moviles (responsive web design)</strong>.</p>
+										</div>
+									</div>
+									<div class="timeline-item">
+										<div class="timeline-item__date">2013 - 2014</div>
+										<div class="timeline-item__info">
+											<h4 class="timeline-item__company">Panamerik Agencia Ecommerce</h4>
+											<h5 class="timeline-item__title">Programador y capacitador Wordpress</h5>
+											<p class="timeline-item__description">En esta posición fui responsable del la colaboración en el desarrollo de proyectos varios creados con Wordpress y capacitación a los clientes para cuando tengan que administrarlos.</p>
+										</div>
+									</div>
+									<div class="timeline-item">
+										<div class="timeline-item__date">2008 - 2011</div>
+										<div class="timeline-item__info">
+											<h4 class="timeline-item__company">Enterprise business group S.A. de C.V.</h4>
+											<h5 class="timeline-item__title">Técnico de diagnóstico.</h5>
+											<p class="timeline-item__description">Responsable del área de ensamble de celulares Blackberry y dar soluciones a fallas funcionales enn tarjetas electrónicas y cosméticos de las unidades terminadas antes de mandarlas a revisión de calidad, asi mismo colaborando en proyectos de mejora continua KAIZEN.</p>
+										</div>
+									</div>
+									<div class="timeline-item">
+										<div class="timeline-item__date">2007 - 2008</div>
+										<div class="timeline-item__info">
+											<h4 class="timeline-item__company">Solución grafica</h4>
+											<h5 class="timeline-item__title">Apoyo laboral del gobierno</h5>
+											<p class="timeline-item__description">Diseño e instalación de rótulos publicitarios en camionetas, automóviles y camiones.</p>
+										</div>
+									</div>
+									<div class="timeline-item">
+										<div class="timeline-item__date">2004 - 2006</div>
+										<div class="timeline-item__info">
+											<h4 class="timeline-item__company">Its Comunicacón Grafica</h4>
+											<h5 class="timeline-item__title">Diseño gráfico e impresión digital.</h5>
+											<p class="timeline-item__description">Pre-prensa e impresión digital. Diseño gráfico y acabado de impresión y corte.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="column education">
+							<div class="column-icon">
+								<i class="fa-solid fa-school"></i>
+							</div>
+							<h2 class="column-title">Educación</h2>
+							<div class="timeline">
+								<div class="timeline education-timeline">
+									<div class="timeline-item">
+										<div class="timeline-item__date">2009 - 2013</div>
+										<div class="timeline-item__info">
+											<h4 class="timeline-item__title">Instituto Tecnológico Superior
+de Zapopan</h4>
+											<h5 class="timeline-item__career">Ingeniero en Sistemas Computacionales</h5>
+											<p class="timeline-item__description">En esta carrera aprendí sobre cómo diseñar, desarrollar e implementar software y sistemas informáticos y sistemas web para solucionar problemas y satisfacer necesidades de los usuarios.</p>
+										</div>
+									</div>
+									<div class="timeline-item">
+										<div class="timeline-item__date">2001 - 2004</div>
+										<div class="timeline-item__info">
+											<h4 class="timeline-item__title">Preparatoria N° 10</h4>
+											<h5 class="timeline-item__career">Técnico Profesional en Informática</h5>
+											<p class="timeline-item__description">En esta carrera aprendí sobre como enfocarme en la aplicación de la tecnología de la información para resolver problemas y optimizar procesos. Esta carrera implica el estudio de los principios fundamentales de la informática, la programación, las bases de datos, las redes, la seguridad informática y otros campos relacionados.</p>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="portafolio-resume__courses">
+				<div class="portafolio-resume__courses__icon courses-icon">
+					<i class="fas fa-graduation-cap"></i>
+				</div>
+				<div class="portafolio-resume__courses__title courses-title">
+					<h2>Certificaciones</h2>		
+				</div>
+				<div class="portafolio-resume__courses-carousel-container courses-courses-carousel">
+					<div class="portafolio-resume__courses-carousel">
+						<div class="portafolio-resume__courses-card">
+							<div class="portafolio-resume__courses-card-img courses-card-img">
+								<img src="https://hevelmo.github.io/assets/img/certificaciones/SOi88D6pXRzKd7dIWuI1T_js_389.jpg" alt="Imagen del curso">
+								<div class="portafolio-resume__courses-card-school-icon">
+									<img src="https://import.cdn.thinkific.com/410288/XzxKMAaSymJ4QY0yj4Kg_rounded_png" alt="Icono del sitio de la escuela o academia del curso">
+								</div>
+							</div>
+							<h3 class="portafolio-resume__courses-card-title courses-card-title">Crea una librería de juegos, un carrito y más con PHP MySQL AJAX</h3>
+							<h4 class="portafolio-resume__courses-card-school courses-card-school">Academia de Joystick</h4>
+							<!--<a class="portafolio-resume__courses-card-link" href="#">Enlace del curso</a>-->
+							<!--<div class="portafolio-resume__courses-card-credentials">
+								<p class="portafolio-resume__courses-card-credentials-certification">Certificado</p>
+								<p class="portafolio-resume__courses-card-credentials-status">Completo</p>
+								<div class="portafolio-resume__courses-card-credentials-progress">
+										<div class="portafolio-resume__courses-card-credentials-progress-bar" style="width: 100%;">
+												<span class="portafolio-resume__courses-card-credentials-progress-bar-text">100%</span>
+										</div>
+								</div>
+						</div>-->
+						<div class="portafolio-resume__courses-card-credentials">
+							<div class="portafolio-resume__courses-card-credentials__certificates">
+								<div class="portafolio-resume__courses-card-credentials__certificates__title">Titulo obtenido</div>
+								<div class="portafolio-resume__courses-card-credentials__certificates__certification">Certificado</div>
+							</div>
+							<div class="portafolio-resume__courses-card-credentials__status">
+								<div class="portafolio-resume__courses-card-credentials__status__title">Completo</div>
+								<div class="portafolio-resume__courses-card-credentials__status__progress">
+									<div class="portafolio-resume__courses-card-credentials__status__progress__progress-bar" style="width: 100%;">
+										<span class="portafolio-resume__courses-card-credentials__status__progress__progress-bar__progress-bar-text">100%</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Mas cards de cursos -->
+					</div>
+						<div class="portafolio-resume__courses-card">
+							<div class="portafolio-resume__courses-card-img courses-card-img">
+								<img src="https://bedu-staging-assets.s3.us-west-2.amazonaws.com/BEDU/C_Diseno_Productos_Dig_c19331fd67.png" alt="Imagen del curso">
+								<div class="portafolio-resume__courses-card-school-icon">
+									<img src="https://bedu.org/favicon-16x16.png" alt="Icono del sitio de la escuela o academia del curso">
+								</div>
+							</div>
+							<h3 class="portafolio-resume__courses-card-title courses-card-title">Desarrollo de Productos Digitales (UX & UI)</h3>
+							<h4 class="portafolio-resume__courses-card-school courses-card-school">Capacitaciones en Tecnología, Negocios, Soft Skills  | BEDU</h4>
+							<!--<a class="portafolio-resume__courses-card-link" href="#">Enlace del curso</a>-->
+							<!--<div class="portafolio-resume__courses-card-credentials">
+								<h5 class="portafolio-resume__courses-card-credentials-title">Titulo obtenido</h5>
+								<p class="portafolio-resume__courses-card-credentials-certification">Pendiente</p>
+								<p class="portafolio-resume__courses-card-credentials-status">Completo</p>
+								<div class="portafolio-resume__courses-card-credentials-progress">
+										<div class="portafolio-resume__courses-card-credentials-progress-bar" style="width: 100%;">
+												<span class="portafolio-resume__courses-card-credentials-progress-bar-text">100%</span>
+										</div>
+								</div>
+						</div>-->
+						<div class="portafolio-resume__courses-card-credentials">
+							<div class="portafolio-resume__courses-card-credentials__certificates">
+								<div class="portafolio-resume__courses-card-credentials__certificates__title">Titulo obtenido</div>
+								<div class="portafolio-resume__courses-card-credentials__certificates__certification">Pendiente</div>
+							</div>
+							<div class="portafolio-resume__courses-card-credentials__status">
+								<div class="portafolio-resume__courses-card-credentials__status__title">Completo</div>
+								<div class="portafolio-resume__courses-card-credentials__status__progress">
+									<div class="portafolio-resume__courses-card-credentials__status__progress__progress-bar" style="width: 100%;">
+										<span class="portafolio-resume__courses-card-credentials__status__progress__progress-bar__progress-bar-text">100%</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Mas cards de cursos -->
+					</div>
+				</div>
+			</div>
+		</div>
+      <div class="portafolio-resume__skills">
+        <div class="portafolio-resume__skills__icon skills-icon">
+          <i class="fas fa-rocket"></i>
         </div>
+        <div class="portafolio-resume__skills__title skills-title">
+          <h2>Habilidades</h2>
+        </div>
+				<div class="portafolio-resume__skills__widgets-cards skills-widgets-cards">
+					<div class="portafolio-resume__skills__design-skills__container">
+						<div class="portafolio-resume__skills__widgets-cards__icon design-skills-icon">
+							<i class="fas fa-palette"></i>
+						</div>
+						<div class="portafolio-resume__skills__widgets-cards__title design-skills-title">
+							<h3>Habilidades de Diseño</h3>
+						</div>
+						<div class="scroll-container design-skills-container design-skills-content">
+							<div class="scroll-content design-skills-content">
+								<div class="portafolio-resume__skills__widgets-cards__card">
+									<div class="portafolio-resume__skills__widgets-cards__card__icon">
+										<i class="ski-adobe-photoshop-cc"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i>
+									</div>
+									<div class="portafolio-resume__skills__widgets-cards__card__title">
+										Adobe Photoshop
+									</div>
+									<div class="portafolio-resume__skills__widgets-cards__card__progress">
+										<div class="portafolio-resume__skills__widgets-cards__card__progress-bar" style="width: 90%;"></div>
+										<div class="portafolio-resume__skills__widgets-cards__card__progress-percent">90%</div>
+									</div>
+								</div>
+								<div class="portafolio-resume__skills__widgets-cards__card">
+									<div class="portafolio-resume__skills__widgets-cards__card__icon">
+										<i class="ski-adobe-illustrator-cc"><span class="path1"></span><span class="path2"></span></i>
+									</div>
+									<div class="portafolio-resume__skills__widgets-cards__card__title">
+										Adobe Illustrator
+									</div>
+									<div class="portafolio-resume__skills__widgets-cards__card__progress">
+										<div class="portafolio-resume__skills__widgets-cards__card__progress-bar" style="width: 90%;"></div>
+										<div class="portafolio-resume__skills__widgets-cards__card__progress-percent">90%</div>
+									</div>
+								</div>				
+								<div class="portafolio-resume__skills__widgets-cards__card">
+									<div class="portafolio-resume__skills__widgets-cards__card__icon">
+										<i class="fas fa-paint-brush"></i>
+									</div>
+									<div class="portafolio-resume__skills__widgets-cards__card__title">
+										Diseño Gráfico
+									</div>
+									<div class="portafolio-resume__skills__widgets-cards__card__progress">
+										<div class="portafolio-resume__skills__widgets-cards__card__progress-bar" style="width: 90%;"></div>
+										<div class="portafolio-resume__skills__widgets-cards__card__progress-percent">90%</div>
+									</div>
+								</div>
+								<div class="portafolio-resume__skills__widgets-cards__card">
+									<div class="portafolio-resume__skills__widgets-cards__card__icon">
+										<i class="fas fa-laptop-code"></i>
+									</div>
+									<div class="portafolio-resume__skills__widgets-cards__card__title">
+										Diseño Web
+									</div>
+									<div class="portafolio-resume__skills__widgets-cards__card__progress">
+										<div class="portafolio-resume__skills__widgets-cards__card__progress-bar" style="width: 90%;"></div>
+										<div class="portafolio-resume__skills__widgets-cards__card__progress-percent">90%</div>
+									</div>
+								</div>
+								<div class="portafolio-resume__skills__widgets-cards__card">
+									<div class="portafolio-resume__skills__widgets-cards__card__icon">
+										<i class="fas fa-desktop"></i>
+									</div>
+									<div class="portafolio-resume__skills__widgets-cards__card__title">
+										Diseño UI/UX
+									</div>
+									<div class="portafolio-resume__skills__widgets-cards__card__progress">
+										<div class="portafolio-resume__skills__widgets-cards__card__progress-bar" style="width: 85%;"></div>
+										<div class="portafolio-resume__skills__widgets-cards__card__progress-percent">85%</div>
+									</div>
+								</div>
+								<div class="portafolio-resume__skills__widgets-cards__card">
+									<div class="portafolio-resume__skills__widgets-cards__card__icon">
+										<i class="fas fa-paint-brush"></i>
+									</div>
+									<div class="portafolio-resume__skills__widgets-cards__card__title">
+										Ilustración
+									</div>
+									<div class="portafolio-resume__skills__widgets-cards__card__progress">
+										<div class="portafolio-resume__skills__widgets-cards__card__progress-bar" style="width: 80%;"></div>
+										<div class="portafolio-resume__skills__widgets-cards__card__progress-percent">80%</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--<button class="scroll-button design-skills-scroll-button scroll-button-left"><i class="fa fa-chevron-left"></i></button>
+						<button class="scroll-button design-skills-scroll-button scroll-button-right"><i class="fa fa-chevron-right"></i></button>-->
+					</div>
+					<div class="portafolio-resume__skills__coding-skills__container">
+						<div class="portafolio-resume__skills__widgets-cards__icon coding-skills-icon">
+							<i class="fas fa-code"></i>
+						</div>
+						<div class="portafolio-resume__skills__widgets-cards__title coding-skills-title">
+							<h3>Habilidades de Código</h3>
+						</div>
+						<div class="scroll-container coding-skills-container coding-skills-content">
+							<div class="scroll-content coding-skills-content">
+								<div class="portafolio-resume__skills__widgets-cards__card">
+									<div class="portafolio-resume__skills__widgets-cards__card__icon">
+										<i class="fas fa-code"></i>
+									</div>
+									<div class="portafolio-resume__skills__widgets-cards__card__title">
+										HTML/CSS
+									</div>
+									<div class="portafolio-resume__skills__widgets-cards__card__progress">
+										<div class="portafolio-resume__skills__widgets-cards__card__progress-bar" style="width: 80%;"></div>
+										<div class="portafolio-resume__skills__widgets-cards__card__progress-percent">80%</div>
+									</div>
+								</div>
+								<div class="portafolio-resume__skills__widgets-cards__card">
+									<div class="portafolio-resume__skills__widgets-cards__card__icon">
+										<i class="fab fa-js-square"></i>
+									</div>
+									<div class="portafolio-resume__skills__widgets-cards__card__title">
+										JavaScript
+									</div>
+									<div class="portafolio-resume__skills__widgets-cards__card__progress">
+										<div class="portafolio-resume__skills__widgets-cards__card__progress-bar" style="width: 70%;"></div>
+										<div class="portafolio-resume__skills__widgets-cards__card__progress-percent">70%</div>
+									</div>
+								</div>
+								<div class="portafolio-resume__skills__widgets-cards__card">
+									<div class="portafolio-resume__skills__widgets-cards__card__icon">
+										<i class="fab fa-react"></i>
+									</div>
+									<div class="portafolio-resume__skills__widgets-cards__card__title">
+										React
+									</div>
+									<div class="portafolio-resume__skills__widgets-cards__card__progress">
+										<div class="portafolio-resume__skills__widgets-cards__card__progress-bar" style="width: 60%;"></div>
+										<div class="portafolio-resume__skills__widgets-cards__card__progress-percent">60%</div>
+									</div>
+								</div>
+								<div class="portafolio-resume__skills__widgets-cards__card">
+									<div class="portafolio-resume__skills__widgets-cards__card__icon">
+										<i class="fab fa-php"></i>
+									</div>
+									<div class="portafolio-resume__skills__widgets-cards__card__title">
+										PHP
+									</div>
+									<div class="portafolio-resume__skills__widgets-cards__card__progress">
+										<div class="portafolio-resume__skills__widgets-cards__card__progress-bar" style="width: 95%;"></div>
+										<div class="portafolio-resume__skills__widgets-cards__card__progress-percent">95%</div>
+									</div>
+								</div>
+								<div class="portafolio-resume__skills__widgets-cards__card">
+									<div class="portafolio-resume__skills__widgets-cards__card__icon">
+										<i class="ski-slim"><span class="path1"></span><span class="path2"></span></i>
+									</div>
+									<div class="portafolio-resume__skills__widgets-cards__card__title">
+										SLIM PHP
+									</div>
+									<div class="portafolio-resume__skills__widgets-cards__card__progress">
+										<div class="portafolio-resume__skills__widgets-cards__card__progress-bar" style="width: 90%;"></div>
+										<div class="portafolio-resume__skills__widgets-cards__card__progress-percent">90%</div>
+									</div>
+								</div>
+								<div class="portafolio-resume__skills__widgets-cards__card">
+									<div class="portafolio-resume__skills__widgets-cards__card__icon">
+										<i class="ski-twig"></i>
+									</div>
+									<div class="portafolio-resume__skills__widgets-cards__card__title">
+										TWIG
+									</div>
+									<div class="portafolio-resume__skills__widgets-cards__card__progress">
+										<div class="portafolio-resume__skills__widgets-cards__card__progress-bar" style="width: 90%;"></div>
+										<div class="portafolio-resume__skills__widgets-cards__card__progress-percent">90%</div>
+									</div>
+								</div>
+								<div class="portafolio-resume__skills__widgets-cards__card">
+									<div class="portafolio-resume__skills__widgets-cards__card__icon">
+										<i class="ski-jquery"></i>
+									</div>
+									<div class="portafolio-resume__skills__widgets-cards__card__title">
+										JQUERY
+									</div>
+									<div class="portafolio-resume__skills__widgets-cards__card__progress">
+										<div class="portafolio-resume__skills__widgets-cards__card__progress-bar" style="width: 95%;"></div>
+										<div class="portafolio-resume__skills__widgets-cards__card__progress-percent">95%</div>
+									</div>
+								</div>
+								</div>
+						</div>
+						<!--<button class="scroll-button coding-skills-scroll-button scroll-button-left"><i class="fa fa-chevron-left"></i></button>
+						<button class="scroll-button coding-skills-scroll-button scroll-button-right"><i class="fa fa-chevron-right"></i></button>-->
+				</div>
+					<div class="portafolio-resume__skills__knowledges__container">
+						<div class="portafolio-resume__skills__knowledges__icon knowledges-icon">
+							<i class="fa-solid fa-book-open-reader"></i>
+						</div>
+						<div class="portafolio-resume__skills__knowledges__title knowledges-title">
+							<h3>Conocimientos técnicos</h3>
+						</div>
+						<ul class="portafolio-resume__skills__knowledges__list knowledges-list">
+							<li>
+								<span class="badge badge--with-icon">
+									HTML5
+									<i class="fas fa-code badge--icon badge--left"></i>
+								</span>
+							</li>
+							<li>
+								<span class="badge badge--with-icon">
+									CSS3
+									<i class="fab fa-css3-alt badge--icon badge--left"></i>
+								</span>
+							</li>
+							<li>
+								<span class="badge badge--with-icon">
+									JavaScript
+									<i class="fab fa-js-square badge--icon badge--left"></i>
+								</span>
+							</li>
+							<li>
+								<span class="badge badge--with-icon">
+									jQuery
+									<i class="fas fa-question-circle badge--icon badge--left"></i>
+								</span>
+							</li>
+							<li>
+								<span class="badge badge--with-icon">
+									ReactJS
+									<i class="fab fa-react badge--icon badge--left"></i>
+								</span>
+							</li>
+							<li>
+								<span class="badge badge--with-icon">
+									Node.js
+									<i class="fab fa-node-js badge--icon badge--left"></i>
+								</span>
+							</li>
+							<li>
+								<span class="badge badge--with-icon">
+									Express
+									<i class="fas fa-server badge--icon badge--left"></i>
+								</span>
+							</li>
+							<li>
+								<span class="badge badge--with-icon">
+									MongoDB
+									<i class="fas fa-database badge--icon badge--left"></i>
+								</span>
+							</li>
+						</ul>
+					</div>
+      	</div>
+			</div>
+		</div>
+	</section>
+	<section id="portafolio" class="portafolio-briefcase">
+		<div class="portafolio-briefcase__container">
+			<div class="portafolio-briefcase__title-bg">Portafolio</div>
+		</div>
+	</section>
+	<section id="blog" class="portafolio-blog">
+		<div class="portafolio-blog__container">
+			<div class="portafolio-blog__title-bg">Blog</div>
+		</div>
+	</section>
+	<section id="contacto" class="portafolio-contacto">
+		<div class="portafolio-contacto__container">
+			<div class="portafolio-contacto__title-bg">Contacto</div>
+		</div>
+	</section>
+</main>
 
-        <header>
-            <!-- Vista del encabezado -->
-            <nav>
-                <ul>
-                    <li><a href="#sobre-mi" class="active">Sobre mí</a></li>
-                    <li><a href="#portafolio">Portafolio</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <main>
-            <section id="sobre-mi">
-                <h1>Sobre mí</h1>
-                <div class="sobre-mi-contenedor">
-                    <h3 class="sobre-mi-titulo"></h3>
-                    <div class="sobre-mi-contenido">
-                      <div class="sobre-mi-foto-contenedor">
-                        <img class="sobre-mi-foto" src="">
-                      </div>
-                      <div class="sobre-mi-descripcion"></div>
-                      <div class="sobre-mi-habilidades"></div>
-                    </div>
-                </div>
-            </section>
-        
-            <section id="portafolio">
-                <!-- Vista de la sección Portafolio -->
-                <h1>Portafolio</h1>
-                <div class="portafolio-contenedor">
-                    <h2 class="portafolio-titulo"></h2>
-                    <div class="portafolio-proyectos-contenedor">
-                        <div class="portafolio-proyecto">
-                            <img class="portafolio-proyecto-imagen" src="" alt="">
-                            <h3 class="portafolio-proyecto-titulo"></h3>
-                            <p class="portafolio-proyecto-descripcion"></p>
-                            <a class="portafolio-proyecto-enlace" href="" target="_blank">Ver proyecto</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            
-            <section id="blog">
-                <!-- Vista de la sección Blog -->
-                <h2>Blog</h2>
-                <div class="blog-contenedor">
-                    <h2 class="blog-titulo"></h2>
-                    <div class="blog-articulos-contenedor">
-                        <div class="blog-articulo">
-                            <img class="blog-articulo-imagen" src="" alt="">
-                            <h3 class="blog-articulo-titulo"></h3>
-                            <p class="blog-articulo-autor-fecha"></p>
-                            <p class="blog-articulo-contenido"></p>
-                            <a class="blog-articulo-enlace" href="" target="_blank">Ver articulo</a>
-                          </div>
-                    </div>
-                </div>
-            </section>
-            
-            <section id="contacto">
-                <!-- Vista de la sección Contacto -->
-                <h2>Contáctame</h2>
-                <div class="contacto-opciones-contenedor">
-                    <p class="contact-titulo"></p>
-                </div>
-              </section>
-              
-        </main>
-        
-        <footer>
-            <div class="footer-contenedor">
-              <div class="footer-enlaces">
-                <a href="#">Portafolio</a>
-                <a href="#">LinkedIn</a>
-                <a href="#">GitHub</a>
-              </div>
-              <div class="footer-derechos">
-                <p>Todos los derechos reservados &copy; 2023</p>
-              </div>
-            </div>
-        </footer>
           
         <script src="assets/js/main.js"></script>
         <script src="assets/js/models.js"></script>
